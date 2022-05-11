@@ -1,0 +1,16 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_hamster.srcs/sources_1/imports/dsp_base_project/i3c2.vhd" \
+"../../../../project_hamster.srcs/sources_1/imports/dsp_base_project/adau1761_configuraiton_data.vhd" \
+"../../../../project_hamster.srcs/sources_1/imports/dsp_base_project/i2s_data_interface.vhd" \
+"../../../../project_hamster.srcs/sources_1/imports/dsp_base_project/i2c.vhd" \
+"../../../../project_hamster.srcs/sources_1/imports/dsp_base_project/ADAU1761_interface.vhd" \
+"../../../../project_hamster.srcs/sources_1/imports/dsp_base_project/adau1761_izedboard.vhd" \
+"../../../../project_hamster.srcs/sources_1/imports/dsp_base_project/adau1761_test.vhd" \
+"../../../../project_hamster.srcs/sources_1/bd/design_1/sim/design_1.vhd" \
+"../../../../project_hamster.srcs/sources_1/new/qpsk_egokitu.vhd" \
+"../../../../project_hamster.srcs/sim_1/imports/dsp_base_project/tb_adau1761_test.vhd" \
+"../../../../project_hamster.srcs/sim_1/imports/Downloads/egokitu_tb.vhd" \
+
+# Do not sort compile order
+nosort

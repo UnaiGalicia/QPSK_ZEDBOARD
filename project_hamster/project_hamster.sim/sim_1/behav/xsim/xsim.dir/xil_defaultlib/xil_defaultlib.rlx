@@ -1,0 +1,21 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/usuario/Desktop/Masterra/I. Urtea/2. Lahuliekoa/Zirkuitu Digitalen Laborategia/Laborategia/project_hamster/project_hamster.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/usuario/Desktop/Masterra/I. Urtea/2. Lahuliekoa/Zirkuitu Digitalen Laborategia/Laborategia/project_hamster/project_hamster.srcs/sim_1/imports/Sourceak/axiegokTB.v,1651159091,verilog,,,,axiegoktb_tb,,,,,,,,
+C:/Users/usuario/Desktop/Masterra/I. Urtea/2. Lahuliekoa/Zirkuitu Digitalen Laborategia/Laborategia/project_hamster/project_hamster.srcs/sources_1/bd/design_1/sim/design_1.vhd,1651053302,vhdl,,,,,,,,,,,,
+C:/Users/usuario/Desktop/Masterra/I. Urtea/2. Lahuliekoa/Zirkuitu Digitalen Laborategia/Laborategia/project_hamster/project_hamster.srcs/sources_1/imports/dsp_base_project/clocking.vhd,1648799098,vhdl,,,,clocking,,,,,,,,
+C:/Users/usuario/Desktop/Masterra/I. Urtea/2. Lahuliekoa/Zirkuitu Digitalen Laborategia/Laborategia/project_hamster/project_hamster.srcs/sources_1/imports/dsp_base_project/dsp_block.vhd,1648799098,vhdl,,,,dsp_block,,,,,,,,
+C:/Users/usuario/Desktop/Masterra/I. Urtea/2. Lahuliekoa/Zirkuitu Digitalen Laborategia/Laborategia/project_hamster/project_hamster.srcs/sources_1/imports/dsp_base_project/low_pass_moving_sum.vhd,1648799098,vhdl,,,,low_pass_moving_sum,,,,,,,,
+C:/VivadoProjects/project_hamster/project_hamster.srcs/sim_1/imports/Downloads/egokitu_tb.vhd,1652266222,vhdl,,,,egokitu_tb,,,,,,,,
+C:/VivadoProjects/project_hamster/project_hamster.srcs/sim_1/imports/dsp_base_project/tb_adau1761_test.vhd,1648799098,vhdl,,,,tb_adau1761_test,,,,,,,,
+C:/VivadoProjects/project_hamster/project_hamster.srcs/sources_1/bd/design_1/sim/design_1.vhd,1651053302,vhdl,,,,,,,,,,,,
+C:/VivadoProjects/project_hamster/project_hamster.srcs/sources_1/imports/dsp_base_project/ADAU1761_interface.vhd,1648799098,vhdl,,,,adau1761_interface,,,,,,,,
+C:/VivadoProjects/project_hamster/project_hamster.srcs/sources_1/imports/dsp_base_project/adau1761_configuraiton_data.vhd,1648799098,vhdl,,,,adau1761_configuraiton_data,,,,,,,,
+C:/VivadoProjects/project_hamster/project_hamster.srcs/sources_1/imports/dsp_base_project/adau1761_izedboard.vhd,1648799098,vhdl,,,,adau1761_izedboard,,,,,,,,
+C:/VivadoProjects/project_hamster/project_hamster.srcs/sources_1/imports/dsp_base_project/adau1761_test.vhd,1651693807,vhdl,,,,adau1761_test,,,,,,,,
+C:/VivadoProjects/project_hamster/project_hamster.srcs/sources_1/imports/dsp_base_project/i2c.vhd,1648799098,vhdl,,,,i2c,,,,,,,,
+C:/VivadoProjects/project_hamster/project_hamster.srcs/sources_1/imports/dsp_base_project/i2s_data_interface.vhd,1648799098,vhdl,,,,i2s_data_interface,,,,,,,,
+C:/VivadoProjects/project_hamster/project_hamster.srcs/sources_1/imports/dsp_base_project/i3c2.vhd,1648799098,vhdl,,,,i3c2,,,,,,,,
+C:/VivadoProjects/project_hamster/project_hamster.srcs/sources_1/new/qpsk_egokitu.vhd,1652284240,vhdl,,,,qpsk_egokitu,,,,,,,,

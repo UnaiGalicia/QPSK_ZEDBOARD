@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-3" LaunchTime="1651916492">
+  <File Type="PA-TCL" Name="adau1761_test.tcl"/>
+  <File Type="REPORTS-TCL" Name="adau1761_test_reports.tcl"/>
+  <File Type="RDS-RDS" Name="adau1761_test.vds"/>
+  <File Type="RDS-UTIL" Name="adau1761_test_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="adau1761_test_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="adau1761_test.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/dsp_base_project/i3c2.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../DigitalProiektuak/Hamster proiektua/dsp_base_project/i3c2.vhd"/>
+        <Attr Name="ImportTime" Val="1648799098"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/dsp_base_project/adau1761_configuraiton_data.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../DigitalProiektuak/Hamster proiektua/dsp_base_project/adau1761_configuraiton_data.vhd"/>
+        <Attr Name="ImportTime" Val="1648799098"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/dsp_base_project/i2s_data_interface.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../DigitalProiektuak/Hamster proiektua/dsp_base_project/i2s_data_interface.vhd"/>
+        <Attr Name="ImportTime" Val="1648799098"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/dsp_base_project/i2c.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../DigitalProiektuak/Hamster proiektua/dsp_base_project/i2c.vhd"/>
+        <Attr Name="ImportTime" Val="1648799098"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/dsp_base_project/ADAU1761_interface.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../DigitalProiektuak/Hamster proiektua/dsp_base_project/ADAU1761_interface.vhd"/>
+        <Attr Name="ImportTime" Val="1648799098"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/dsp_base_project/adau1761_izedboard.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../DigitalProiektuak/Hamster proiektua/dsp_base_project/adau1761_izedboard.vhd"/>
+        <Attr Name="ImportTime" Val="1648799098"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/dsp_base_project/adau1761_test.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../DigitalProiektuak/Hamster proiektua/dsp_base_project/adau1761_test.vhd"/>
+        <Attr Name="ImportTime" Val="1651057081"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/dsp_base_project/i3c2program">
+      <FileInfo SFType="TXT">
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../DigitalProiektuak/Hamster proiektua/dsp_base_project/i3c2program"/>
+        <Attr Name="ImportTime" Val="1648799098"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/dsp_base_project/project_hamster/import_ise_summary.txt">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../DigitalProiektuak/Hamster proiektua/dsp_base_project/project_hamster/import_ise_summary.txt"/>
+        <Attr Name="ImportTime" Val="1648799187"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../DigitalProiektuak/Hamster proiektua/dsp_base_project/project_hamster/project_hamster.srcs/sources_1/bd/design_1/design_1.bd"/>
+        <Attr Name="ImportTime" Val="1651053302"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/qpsk_egokitu.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../DigitalProiektuak/Hamster proiektua/dsp_base_project/project_hamster/project_hamster.srcs/sources_1/new/qpsk_egokitu.vhd"/>
+        <Attr Name="ImportTime" Val="1651058302"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/archive_project_summary.txt"/>
+    <File Path="$PPRDIR/../../vivadoprojects/project_hamster/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="adau1761_test"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/dsp_base_project/adau1761_test.ucf">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../DigitalProiektuak/Hamster proiektua/dsp_base_project/adau1761_test.ucf"/>
+        <Attr Name="ImportTime" Val="1648799098"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/dsp_base_project/hamset_ioplanning/hamset_ioplanning.srcs/constrs_1/new/hamster_constraints.xdc">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../DigitalProiektuak/Hamster proiektua/dsp_base_project/hamset_ioplanning/hamset_ioplanning.srcs/constrs_1/new/hamster_constraints.xdc"/>
+        <Attr Name="ImportTime" Val="1648801258"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/hamst_const.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/hamst_const.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

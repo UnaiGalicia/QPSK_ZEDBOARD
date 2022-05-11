@@ -1,0 +1,1 @@
+-wto "44a83cb88d76413499e6a5f4729a0b39" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" -L "xpm" --snapshot "egokitu_tb_behav" "xil_defaultlib.egokitu_tb" -log "elaborate.log" 
