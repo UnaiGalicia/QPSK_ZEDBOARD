@@ -1,10 +1,10 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: 
+-- Engineer: Unai
 -- 
 -- Create Date: 11.05.2022 09:12:58
 -- Design Name: 
--- Module Name: fr - Behavioral
+-- Module Name: Control - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 

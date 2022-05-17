@@ -45,7 +45,7 @@ architecture Behavioral of QPSKTB is
            TVALID_R : OUT STD_LOGIC;
            TREADY_L : out STD_LOGIC;
            TREADY_R : in STD_LOGIC;
-           TDATA_R : out STD_LOGIC_VECTOR (23 downto 0)
+           TDATA_R : out STD_LOGIC_VECTOR (31 downto 0)
            );
     end COMPONENT;
 
@@ -55,7 +55,7 @@ signal TVALID_L : STD_LOGIC;
 signal TVALID_R : STD_LOGIC;
 signal TREADY_L : STD_LOGIC;
 signal TREADY_R : STD_LOGIC;
-signal TDATA_R : STD_LOGIC_VECTOR (23 downto 0);
+signal TDATA_R : STD_LOGIC_VECTOR (31 downto 0);
 
 constant	clk48_period : time := 20 ns;
 
@@ -95,52 +95,62 @@ begin
         TDATA_L <= "00000000000000000000000000000000";
         TREADY_R <= '1';
         TVALID_L <= '1';
-        wait for 960 us;
+        wait for 500 us;
         
-        TDATA_L <= "01000000000000000000000000000000";
-        TREADY_R <= '0';
-        TVALID_L <= '0';
-        wait for 60 ns;
-        
-        TDATA_L <= "01000000000000000000000000000000";
-        TREADY_R <= '0';
-        TVALID_L <= '1';
-        wait for 60 ns;
-        
-        TDATA_L <= "01000000000000000000000000000000";
+        TDATA_L <= "00000000000000000000000000000000";
         TREADY_R <= '1';
         TVALID_L <= '1';
-        wait for 900 us;
+        wait for 500 us;
         
-        TDATA_L <= "10000000000000000000000000000000";
-        TREADY_R <= '0';
-        TVALID_L <= '0';
-        wait for 40 ns;
-        
-        TDATA_L <= "10000000000000000000000000000000";
-        TREADY_R <= '0';
-        TVALID_L <= '1';
-        wait for 40 ns;
-        
-        TDATA_L <= "10000000000000000000000000000000";
+        TDATA_L <= "00000000000000000000000000000000";
         TREADY_R <= '1';
         TVALID_L <= '1';
-        wait for 960 us;
+        wait for 450 us;
         
-        TDATA_L <= "11000000000000000000000000000000";
-        TREADY_R <= '0';
-        TVALID_L <= '0';
-        wait for 60 ns;
+--        TDATA_L <= "01000000000000000000000000000000";
+--        TREADY_R <= '0';
+--        TVALID_L <= '0';
+--        wait for 60 ns;
         
-        TDATA_L <= "11000000000000000000000000000000";
-        TREADY_R <= '0';
-        TVALID_L <= '1';
-        wait for 60 ns;
+--        TDATA_L <= "01000000000000000000000000000000";
+--        TREADY_R <= '0';
+--        TVALID_L <= '1';
+--        wait for 60 ns;
         
-        TDATA_L <= "11000000000000000000000000000000";
-        TREADY_R <= '1';
-        TVALID_L <= '1';
-        wait for 900 us;
+--        TDATA_L <= "01000000000000000000000000000000";
+--        TREADY_R <= '1';
+--        TVALID_L <= '1';
+--        wait for 900 us;
+        
+--        TDATA_L <= "10000000000000000000000000000000";
+--        TREADY_R <= '0';
+--        TVALID_L <= '0';
+--        wait for 40 ns;
+        
+--        TDATA_L <= "10000000000000000000000000000000";
+--        TREADY_R <= '0';
+--        TVALID_L <= '1';
+--        wait for 40 ns;
+        
+--        TDATA_L <= "10000000000000000000000000000000";
+--        TREADY_R <= '1';
+--        TVALID_L <= '1';
+--        wait for 960 us;
+        
+--        TDATA_L <= "11000000000000000000000000000000";
+--        TREADY_R <= '0';
+--        TVALID_L <= '0';
+--        wait for 60 ns;
+        
+--        TDATA_L <= "11000000000000000000000000000000";
+--        TREADY_R <= '0';
+--        TVALID_L <= '1';
+--        wait for 60 ns;
+        
+--        TDATA_L <= "11000000000000000000000000000000";
+--        TREADY_R <= '1';
+--        TVALID_L <= '1';
+--        wait for 900 us;
         
         
         

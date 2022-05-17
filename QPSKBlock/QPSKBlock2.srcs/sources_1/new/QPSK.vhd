@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: 
+-- Engineer: Unai
 -- 
 -- Create Date: 16.05.2022 16:47:24
 -- Design Name: 
@@ -22,14 +22,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity QPSK is
     Port ( CLK : in STD_LOGIC;
@@ -38,7 +30,8 @@ entity QPSK is
            TVALID_R : OUT STD_LOGIC;
            TREADY_L : out STD_LOGIC;
            TREADY_R : in STD_LOGIC;
-           TDATA_R : out STD_LOGIC_VECTOR (23 downto 0));
+           TDATA_R : out STD_LOGIC_VECTOR (31 downto 0) := (others => '0')--(23 downto 0));
+           );
 end QPSK;
 
 architecture Behavioral of QPSK is
@@ -64,7 +57,7 @@ COMPONENT blk_mem_gen_0
     clka : IN STD_LOGIC;
     ena : IN STD_LOGIC;
     addra : IN STD_LOGIC_VECTOR(16 DOWNTO 0);
-    douta : OUT STD_LOGIC_VECTOR(23 DOWNTO 0)
+    douta : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
   );
 END COMPONENT;
 
@@ -94,11 +87,12 @@ begin
         clka => CLK,
         ena => enable,
         addra => addr,
-        douta => TDATA_R
+        douta => TDATA_R--(23 downto 0)
      
      
      );
         
-
+     
+        --TDATA_R(31 downto 24) <= "00000000";
 
 end Behavioral;

@@ -17,8 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache C:/Users/usuario/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-7548-DESKTOP-T22LSJU/incrSyn
-set_msg_config -id {Common 17-41} -limit 10000000
+set_param synth.incrementalSynthesisCache C:/Users/usuario/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-11820-DESKTOP-T22LSJU/incrSyn
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 set_param project.vivado.isBlockSynthRun true
