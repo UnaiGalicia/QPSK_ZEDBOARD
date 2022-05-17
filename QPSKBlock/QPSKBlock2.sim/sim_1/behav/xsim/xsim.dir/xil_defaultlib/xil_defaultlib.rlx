@@ -1,0 +1,10 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/VivadoProjects/QPSKBlock2/QPSKBlock2.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/VivadoProjects/QPSKBlock2/QPSKBlock2.srcs/sim_1/new/QPSKTB.vhd,1652733594,vhdl,,,,qpsktb,,,,,,,,
+C:/VivadoProjects/QPSKBlock2/QPSKBlock2.srcs/sim_1/new/controlTB.vhd,1652732528,vhdl,,,,controltb,,,,,,,,
+C:/VivadoProjects/QPSKBlock2/QPSKBlock2.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1652718984,verilog,,,,blk_mem_gen_0,,,,,,,,
+C:/VivadoProjects/QPSKBlock2/QPSKBlock2.srcs/sources_1/new/QPSK.vhd,1652713619,vhdl,,,,qpsk,,,,,,,,
+C:/VivadoProjects/QPSKBlock2/QPSKBlock2.srcs/sources_1/new/control.vhd,1652731853,vhdl,,,,control,,,,,,,,
