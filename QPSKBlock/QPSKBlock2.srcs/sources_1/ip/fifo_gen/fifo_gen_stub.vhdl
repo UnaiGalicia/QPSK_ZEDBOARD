@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Thu May 19 19:50:40 2022
+-- Date        : Mon May 23 12:29:40 2022
 -- Host        : DESKTOP-T22LSJU running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               C:/VivadoProjects/QPSKBlock2/QPSKBlock2.srcs/sources_1/ip/fifo_gen/fifo_gen_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top fifo_gen -prefix
+--               fifo_gen_ fifo_gen_stub.vhdl
 -- Design      : fifo_gen
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg484-1

@@ -2,3 +2,6 @@ Running: xsim.dir/egokitu_tb_behav/xsimk.exe -simmode gui -wdb egokitu_tb_behav.
 Design successfully loaded
 Design Loading Memory Usage: 5744 KB (Peak: 5744 KB)
 Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 6292 KB (Peak: 6292 KB)
+Simulation CPU Usage: 15 ms

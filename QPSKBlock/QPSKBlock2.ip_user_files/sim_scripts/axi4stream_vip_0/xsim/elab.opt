@@ -1,1 +1,0 @@
---relax --debug typical --mt auto -L axis_infrastructure_v1_1_0 -L xil_defaultlib -L axi4stream_vip_v1_1_4 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot axi4stream_vip_0 xil_defaultlib.axi4stream_vip_0 xil_defaultlib.glbl -log elaborate.log

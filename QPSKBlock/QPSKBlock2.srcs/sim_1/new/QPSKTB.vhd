@@ -85,19 +85,23 @@ begin
    
    simulazioa: process
     begin
-            
+    
+        A_RST <='1';
+        wait for 40 ns;
+        
+        A_RST <='0';    
         TDATA_L <= "00000000000000000000000000000000";
         TREADY_R <= '0';
         TVALID_L <= '0';
         wait for 40 ns;
         
-        TDATA_L <= "00000000000000000000000000000000";
+        TDATA_L <= "01000000000000000000000000000000";
         TREADY_R <= '1';
         TVALID_L <= '1';
         wait for 20 ns;
         
         
-        TDATA_L <= "01000000000000000000000000000000";
+        TDATA_L <= "00000000000000000000000000000000";
         TREADY_R <= '1';
         TVALID_L <= '1';
         wait for 20 ns;
@@ -120,12 +124,12 @@ begin
         TDATA_L <= "00000000000000000000000000000000";
         TREADY_R <= '1';
         TVALID_L <= '0';
-        wait for 10 us;
+        wait for 60 us;
         
         TDATA_L <= "00000000000000000000000000000000";
         TREADY_R <= '0';
         TVALID_L <= '0';
-        wait for 10 us;
+        wait for 100 us;
         
         
 --        TDATA_L <= "01000000000000000000000000000000";

@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/VivadoProjects/QPSKBlock2/QPSKBlock2.srcs/sim_1/new/QPSKTB.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'QPSKTB'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/VivadoProjects/QPSKBlock2/QPSKBlock2.srcs/sources_1/new/control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'control'

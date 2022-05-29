@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1652857349">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1653760969">
   <File Type="PA-TCL" Name="QPSK.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="QPSK_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="QPSK_reports.tcl"/>
   <File Type="RDS-RDS" Name="QPSK.vds"/>
   <File Type="RDS-UTIL" Name="QPSK_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="QPSK_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="QPSK.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="QPSK_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="QPSK_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/fifo_gen/fifo_gen.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/control.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -26,9 +36,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/QPSKHamsterComm.vhd">
+    <File Path="$PPRDIR/qpsklaginak.coe">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_0/qpsklaginak.coe">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>

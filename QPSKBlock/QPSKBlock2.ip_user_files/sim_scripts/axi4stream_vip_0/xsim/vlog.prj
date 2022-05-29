@@ -1,7 +1,0 @@
-sv xil_defaultlib --include "../../../ipstatic/hdl" \
-"../../../../QPSKBlock2.srcs/sources_1/ip/axi4stream_vip_0/sim/axi4stream_vip_0_pkg.sv" \
-"../../../../QPSKBlock2.srcs/sources_1/ip/axi4stream_vip_0/sim/axi4stream_vip_0.sv" \
-
-verilog xil_defaultlib "glbl.v"
-
-nosort
