@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:vendor>Unai</spirit:vendor>
   <spirit:library>user</spirit:library>
   <spirit:name>QPSKBlockIP</spirit:name>
   <spirit:version>1.0</spirit:version>
@@ -272,7 +272,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e141a1fd</spirit:value>
+            <spirit:value>50d641b5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -294,7 +294,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e141a1fd</spirit:value>
+            <spirit:value>50d641b5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -804,7 +804,6 @@
       <spirit:file>
         <spirit:name>src/blk_mem_gen_0/qpsklaginak.coe</spirit:name>
         <spirit:userFileType>coe</spirit:userFileType>
-        <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/QPSKBlockIP_v1_0.vhd</spirit:name>
@@ -946,8 +945,11 @@
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>QPSKBlockIP_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>7</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2022-05-29T08:04:39Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>3</xilinx:coreRevision>
+      <xilinx:upgrades>
+        <xilinx:canUpgradeFrom>xilinx.com:user:QPSKBlockIP:1.0</xilinx:canUpgradeFrom>
+      </xilinx:upgrades>
+      <xilinx:coreCreationDateTime>2022-05-30T15:52:29Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@5831d0e7_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@9d9ecac_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
@@ -1029,13 +1031,65 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@3c02dbe6_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@739c7e7c_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@23a9c43_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a94ee81_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7cea47e2_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@212d3fdf_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@db709c4_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7052518d_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65b809d_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1437f03e_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a536fd7_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66fdc1b7_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79bc6f42_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a8682d7_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6870fc4e_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d60d83b_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33defac6_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64eb17af_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a75379e_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@565cc925_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d7203ce_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48df9e5d_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51409ed5_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50654ca4_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a523b81_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a78042b_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c37b98e_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16f29e40_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32ea00d0_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d031bd0_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68282e9e_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a5f20ab_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d922ad4_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d398333_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4281b4ea_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36a8979a_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c10b76a_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c2f5258_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2511baf5_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13cb0290_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@668e73dc_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18b04640_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d8835ba_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2eaeba_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4945bc2f_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32a263d2_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9dc4a8b_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64a2a133_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4dc0f24b_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5611490c_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a8ee3a0_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@670d62bd_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67850e88_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@322dee70_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7af67255_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/QPSKBlockIP_1.0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="9e3aa48b"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="1a29adad"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b990c627"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="6f9346ae"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="fe94286b"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="5acda4a8"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="45f0407b"/>

@@ -1,0 +1,22 @@
+vhdl fifo_generator_v13_2_3  \
+"../../../../ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/fifo_gen/hdl/fifo_generator_v13_2_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../bd/BlockDesign/ipshared/9b07/src/QPSK.vhd" \
+"../../../bd/BlockDesign/ipshared/9b07/hdl/QPSKBlockIP_v1_0_S01_AXI.vhd" \
+"../../../bd/BlockDesign/ipshared/9b07/src/control.vhd" \
+"../../../bd/BlockDesign/ipshared/9b07/hdl/QPSKBlockIP_v1_0.vhd" \
+"../../../bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/sim/BlockDesign_QPSKBlockIP_0_0.vhd" \
+"../../../bd/BlockDesign/ipshared/8743/src/i3c2.vhd" \
+"../../../bd/BlockDesign/ipshared/8743/src/adau1761_configuraiton_data.vhd" \
+"../../../bd/BlockDesign/ipshared/8743/src/i2s_data_interface.vhd" \
+"../../../bd/BlockDesign/ipshared/8743/src/i2c.vhd" \
+"../../../bd/BlockDesign/ipshared/8743/src/ADAU1761_interface.vhd" \
+"../../../bd/BlockDesign/ipshared/8743/src/adau1761_izedboard.vhd" \
+"../../../bd/BlockDesign/ipshared/8743/src/qpsk_egokitu.vhd" \
+"../../../bd/BlockDesign/ipshared/8743/src/adau1761_test.vhd" \
+"../../../bd/BlockDesign/ip/BlockDesign_HamsterB_0_0/sim/BlockDesign_HamsterB_0_0.vhd" \
+"../../../bd/BlockDesign/ip/BlockDesign_rst_ps7_0_48M_0/sim/BlockDesign_rst_ps7_0_48M_0.vhd" \
+"../../../bd/BlockDesign/sim/BlockDesign.vhd" \
+
+nosort

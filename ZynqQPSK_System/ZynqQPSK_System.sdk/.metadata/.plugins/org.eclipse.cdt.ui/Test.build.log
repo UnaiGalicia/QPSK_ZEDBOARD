@@ -1,0 +1,23 @@
+18:15:45 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ZynqQPSK_Main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZynqQPSK_Main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZynqQPSK_Main.d" -MT"src/ZynqQPSK_Main.o" -o "src/ZynqQPSK_Main.o" "../src/ZynqQPSK_Main.c"
+'Finished building: ../src/ZynqQPSK_Main.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/ZynqQPSK_Main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121420	   2580	  23328	 147328	  23f80	Test.elf
+'Finished building: Test.elf.size'
+' '
+
+18:15:45 Build Finished (took 933ms)
+

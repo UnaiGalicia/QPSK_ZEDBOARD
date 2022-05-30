@@ -1,0 +1,1853 @@
+12:11:34 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:11:49 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19476	   1144	  22568	  43188	   a8b4	Test.elf
+'Finished building: Test.elf.size'
+' '
+12:21:43 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19476	   1144	  22568	  43188	   a8b4	Test.elf
+'Finished building: Test.elf.size'
+' '
+12:21:58 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:22:33 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19468	   1144	  22568	  43180	   a8ac	Test.elf
+'Finished building: Test.elf.size'
+' '
+12:22:48 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:23:37 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19488	   1144	  22568	  43200	   a8c0	Test.elf
+'Finished building: Test.elf.size'
+' '
+12:24:54 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19500	   1144	  22568	  43212	   a8cc	Test.elf
+'Finished building: Test.elf.size'
+' '
+12:25:05 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:25:36 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+../src/helloworld.c:61:21: warning: format '%d' expects argument of type 'int', but argument 2 has type 'unsigned int *' [-Wformat=]
+    printf("Egoera: %d\n", (unsigned int*)(0x43c00020));
+                    ~^
+                    %ls
+../src/helloworld.c:63:21: warning: format '%d' expects argument of type 'int', but argument 2 has type 'unsigned int *' [-Wformat=]
+    printf("Balioa: %d\n", (unsigned int*)(0x43c00000));
+                    ~^
+                    %ls
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70552	   2580	  23328	  96460	  178cc	Test.elf
+'Finished building: Test.elf.size'
+' '
+12:25:52 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:27:47 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+../src/helloworld.c:61:21: warning: format '%d' expects argument of type 'int', but argument 2 has type 'unsigned int *' [-Wformat=]
+    printf("Egoera: %d\n", (unsigned int*)(0x43c00020));
+                    ~^
+                    %ls
+../src/helloworld.c:63:21: warning: format '%d' expects argument of type 'int', but argument 2 has type 'unsigned int *' [-Wformat=]
+    printf("Balioa: %d\n", (unsigned int*)(0x43c00000));
+                    ~^
+                    %ls
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70552	   2580	  23328	  96460	  178cc	Test.elf
+'Finished building: Test.elf.size'
+' '
+12:27:55 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:28:10 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+../src/helloworld.c:61:21: warning: format '%d' expects argument of type 'int', but argument 2 has type 'unsigned int *' [-Wformat=]
+    printf("Egoera: %d\n", (unsigned int*)(0x43c00020));
+                    ~^
+                    %ls
+../src/helloworld.c:63:21: warning: format '%d' expects argument of type 'int', but argument 2 has type 'unsigned int *' [-Wformat=]
+    printf("Balioa: %d\n", (unsigned int*)(0x43c00000));
+                    ~^
+                    %ls
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70552	   2580	  23328	  96460	  178cc	Test.elf
+'Finished building: Test.elf.size'
+' '
+12:28:21 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:29:54 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+../src/helloworld.c:61:23: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'unsigned int *' [-Wformat=]
+    printf("Egoera: %08xd\n", (unsigned int*)(0x43c00020));
+                    ~~~^
+                    %08ls
+../src/helloworld.c:63:23: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'unsigned int *' [-Wformat=]
+    printf("Balioa: %08xd\n", (unsigned int*)(0x43c00000));
+                    ~~~^
+                    %08ls
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70560	   2580	  23328	  96468	  178d4	Test.elf
+'Finished building: Test.elf.size'
+' '
+12:30:17 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+../src/helloworld.c:61:23: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'unsigned int *' [-Wformat=]
+    printf("Egoera: %08x\n", (unsigned int*)(0x43c00020));
+                    ~~~^
+                    %08ls
+../src/helloworld.c:63:23: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'unsigned int *' [-Wformat=]
+    printf("Balioa: %08x \n", (unsigned int*)(0x43c00000));
+                    ~~~^
+                    %08ls
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70560	   2580	  23328	  96468	  178d4	Test.elf
+'Finished building: Test.elf.size'
+' '
+12:30:50 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+../src/helloworld.c:61:29: error: lvalue required as unary '&' operand
+    printf("Egoera: %08x\n", &(unsigned int*)(0x43c00020));
+                             ^
+../src/helloworld.c:63:23: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'unsigned int *' [-Wformat=]
+    printf("Balioa: %08x \n", (unsigned int*)(0x43c00000));
+                    ~~~^
+                    %08ls
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+12:31:35 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+../src/helloworld.c:63:23: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'unsigned int *' [-Wformat=]
+    printf("Balioa: %08x \n", (unsigned int*)(0x43c00000));
+                    ~~~^
+                    %08ls
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70560	   2580	  23328	  96468	  178d4	Test.elf
+'Finished building: Test.elf.size'
+' '
+12:31:41 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+../src/helloworld.c:61:29: error: lvalue required as unary '&' operand
+    printf("Egoera: %08x\n", &(unsigned int*)(0x43c00020));
+                             ^
+../src/helloworld.c:63:23: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'unsigned int *' [-Wformat=]
+    printf("Balioa: %08x \n", (unsigned int*)(0x43c00000));
+                    ~~~^
+                    %08ls
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+12:31:46 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+../src/helloworld.c:63:23: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'unsigned int *' [-Wformat=]
+    printf("Balioa: %08x \n", (unsigned int*)(0x43c00000));
+                    ~~~^
+                    %08ls
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70560	   2580	  23328	  96468	  178d4	Test.elf
+'Finished building: Test.elf.size'
+' '
+12:31:59 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:32:16 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70560	   2580	  23328	  96468	  178d4	Test.elf
+'Finished building: Test.elf.size'
+' '
+12:32:25 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:37:36 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70560	   2580	  23328	  96468	  178d4	Test.elf
+'Finished building: Test.elf.size'
+' '
+12:37:44 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:37:55 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70560	   2580	  23328	  96468	  178d4	Test.elf
+'Finished building: Test.elf.size'
+' '
+12:38:03 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:38:29 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70560	   2580	  23328	  96468	  178d4	Test.elf
+'Finished building: Test.elf.size'
+' '
+12:38:35 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:39:04 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70560	   2580	  23328	  96468	  178d4	Test.elf
+'Finished building: Test.elf.size'
+' '
+12:39:15 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:39:39 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70560	   2580	  23328	  96468	  178d4	Test.elf
+'Finished building: Test.elf.size'
+' '
+12:39:46 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:44:21 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+../src/helloworld.c:58:7: warning: unused variable 'i' [-Wunused-variable]
+   int i=0;
+       ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70480	   2580	  23328	  96388	  17884	Test.elf
+'Finished building: Test.elf.size'
+' '
+12:46:24 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+../src/helloworld.c:58:7: warning: unused variable 'i' [-Wunused-variable]
+   int i=0;
+       ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70480	   2580	  23328	  96388	  17884	Test.elf
+'Finished building: Test.elf.size'
+' '
+12:46:35 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:49:03 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+../src/helloworld.c:58:7: warning: unused variable 'i' [-Wunused-variable]
+   int i=0;
+       ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70480	   2580	  23328	  96388	  17884	Test.elf
+'Finished building: Test.elf.size'
+' '
+12:49:16 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:52:16 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+../src/helloworld.c:58:7: warning: unused variable 'i' [-Wunused-variable]
+   int i=0;
+       ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70496	   2580	  23328	  96404	  17894	Test.elf
+'Finished building: Test.elf.size'
+' '
+12:52:23 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:54:08 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70624	   2580	  23328	  96532	  17914	Test.elf
+'Finished building: Test.elf.size'
+' '
+12:54:17 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:57:27 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+../src/helloworld.c:57:16: warning: unused variable 'egoera' [-Wunused-variable]
+   unsigned int egoera = 0x00000000;
+                ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19440	   1144	  22568	  43152	   a890	Test.elf
+'Finished building: Test.elf.size'
+' '
+12:57:38 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:58:42 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+../src/helloworld.c:70:10: warning: too many arguments for format [-Wformat-extra-args]
+    scanf("aa", &i);
+          ^~~~
+../src/helloworld.c:57:16: warning: unused variable 'egoera' [-Wunused-variable]
+   unsigned int egoera = 0x00000000;
+                ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 100204	   2580	  23328	 126112	  1eca0	Test.elf
+'Finished building: Test.elf.size'
+' '
+12:58:53 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:01:33 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+../src/helloworld.c:58:7: warning: unused variable 'i' [-Wunused-variable]
+   int i=0;
+       ^
+../src/helloworld.c:57:16: warning: unused variable 'egoera' [-Wunused-variable]
+   unsigned int egoera = 0x00000000;
+                ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19440	   1144	  22568	  43152	   a890	Test.elf
+'Finished building: Test.elf.size'
+' '
+13:01:44 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:05:23 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+../src/helloworld.c:58:7: warning: unused variable 'i' [-Wunused-variable]
+   int i=0;
+       ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70496	   2580	  23328	  96404	  17894	Test.elf
+'Finished building: Test.elf.size'
+' '
+13:05:31 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:09:07 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70704	   2580	  23328	  96612	  17964	Test.elf
+'Finished building: Test.elf.size'
+' '
+13:09:20 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:09:39 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70704	   2580	  23328	  96612	  17964	Test.elf
+'Finished building: Test.elf.size'
+' '
+13:09:47 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:10:15 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70704	   2580	  23328	  96612	  17964	Test.elf
+'Finished building: Test.elf.size'
+' '
+13:10:54 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:11:14 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70704	   2580	  23328	  96612	  17964	Test.elf
+'Finished building: Test.elf.size'
+' '
+13:11:21 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:11:33 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+../src/helloworld.c:71:6: warning: operation on 'i' may be undefined [-Wsequence-point]
+     i=i++;
+     ~^~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70704	   2580	  23328	  96612	  17964	Test.elf
+'Finished building: Test.elf.size'
+' '
+13:11:41 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:12:37 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70704	   2580	  23328	  96612	  17964	Test.elf
+'Finished building: Test.elf.size'
+' '
+13:12:43 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:13:51 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70704	   2580	  23328	  96612	  17964	Test.elf
+'Finished building: Test.elf.size'
+' '
+13:13:59 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:15:14 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70704	   2580	  23328	  96612	  17964	Test.elf
+'Finished building: Test.elf.size'
+' '
+13:15:22 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:17:45 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70616	   2580	  23328	  96524	  1790c	Test.elf
+'Finished building: Test.elf.size'
+' '
+13:18:02 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:19:43 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70624	   2580	  23328	  96532	  17914	Test.elf
+'Finished building: Test.elf.size'
+' '
+13:20:00 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:20:38 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32188	   2184	  22632	  57004	   deac	Test.elf
+'Finished building: Test.elf.size'
+' '
+13:23:19 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:25:43 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:3: warning: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   print("Hello World\n\r");
+   ^~~~~
+   printf
+../src/helloworld.c:87:1: error: expected declaration or statement at end of input
+ }
+ ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+13:26:12 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:87:1: error: expected declaration or statement at end of input
+ }
+ ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+13:26:24 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70844	   2580	  23328	  96752	  179f0	Test.elf
+'Finished building: Test.elf.size'
+' '
+13:26:33 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:26:52 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:27:12 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:27:57 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70844	   2580	  23328	  96752	  179f0	Test.elf
+'Finished building: Test.elf.size'
+' '
+13:28:07 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:28:28 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70844	   2580	  23328	  96752	  179f0	Test.elf
+'Finished building: Test.elf.size'
+' '
+13:28:32 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70844	   2580	  23328	  96752	  179f0	Test.elf
+'Finished building: Test.elf.size'
+' '
+13:34:07 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:60:7: warning: unused variable 'i' [-Wunused-variable]
+   int i=0, auk=0;
+       ^
+../src/helloworld.c: In function 'etengabe':
+../src/helloworld.c:88:13: error: 'i' undeclared (first use in this function)
+      switch(i){
+             ^
+../src/helloworld.c:88:13: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'aukera':
+../src/helloworld.c:124:15: error: 'i' undeclared (first use in this function)
+      default: i=0;}
+               ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+13:34:30 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:60:7: warning: unused variable 'i' [-Wunused-variable]
+   int i=0, auk=0;
+       ^
+../src/helloworld.c: In function 'etengabe':
+../src/helloworld.c:88:13: error: 'i' undeclared (first use in this function)
+      switch(i){
+             ^
+../src/helloworld.c:88:13: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+13:37:28 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:60:7: warning: unused variable 'i' [-Wunused-variable]
+   int i=0, auk=0;
+       ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121292	   2580	  23328	 147200	  23f00	Test.elf
+'Finished building: Test.elf.size'
+' '
+13:41:09 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:62:7: warning: unused variable 'i' [-Wunused-variable]
+   int i=0, auk=0;
+       ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121308	   2580	  23328	 147216	  23f10	Test.elf
+'Finished building: Test.elf.size'
+' '
+13:41:27 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121308	   2580	  23328	 147216	  23f10	Test.elf
+'Finished building: Test.elf.size'
+' '
+13:44:01 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-gettimeofdayr.o): In function `_gettimeofday_r':
+gettimeofdayr.c:(.text+0x24): undefined reference to `_gettimeofday'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: Test.elf] Error 1
+13:45:05 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-gettimeofdayr.o): In function `_gettimeofday_r':
+gettimeofdayr.c:(.text+0x24): undefined reference to `_gettimeofday'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: Test.elf] Error 1
+13:46:17 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'etengabe':
+../src/helloworld.c:90:11: warning: unused variable 'terminate' [-Wunused-variable]
+  int i=0, terminate=1;
+           ^~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121308	   2580	  23328	 147216	  23f10	Test.elf
+'Finished building: Test.elf.size'
+' '
+13:46:27 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121308	   2580	  23328	 147216	  23f10	Test.elf
+'Finished building: Test.elf.size'
+' '
+13:46:35 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:47:17 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:48:12 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:65:17: warning: passing argument 2 of 'sscanf' from incompatible pointer type [-Wincompatible-pointer-types]
+    sscanf("%d", &auk);
+                 ^
+In file included from c:\xilinx\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/helloworld.c:48:
+c:\xilinx\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:185:5: note: expected 'const char * restrict' but argument is of type 'int *'
+ int _EXFUN(sscanf, (const char *__restrict, const char *__restrict, ...)
+     ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 132416	   2580	  23328	 158324	  26a74	Test.elf
+'Finished building: Test.elf.size'
+' '
+13:48:22 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:65:17: warning: passing argument 2 of 'sscanf' makes pointer from integer without a cast [-Wint-conversion]
+    sscanf("%d", auk);
+                 ^~~
+In file included from c:\xilinx\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/helloworld.c:48:
+c:\xilinx\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:185:5: note: expected 'const char * restrict' but argument is of type 'int'
+ int _EXFUN(sscanf, (const char *__restrict, const char *__restrict, ...)
+     ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 132416	   2580	  23328	 158324	  26a74	Test.elf
+'Finished building: Test.elf.size'
+' '
+13:48:38 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:65:17: warning: passing argument 2 of 'sscanf' from incompatible pointer type [-Wincompatible-pointer-types]
+    sscanf("%d", &auk);
+                 ^
+In file included from c:\xilinx\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/helloworld.c:48:
+c:\xilinx\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:185:5: note: expected 'const char * restrict' but argument is of type 'int *'
+ int _EXFUN(sscanf, (const char *__restrict, const char *__restrict, ...)
+     ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 132416	   2580	  23328	 158324	  26a74	Test.elf
+'Finished building: Test.elf.size'
+' '
+13:48:46 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:49:15 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121308	   2580	  23328	 147216	  23f10	Test.elf
+'Finished building: Test.elf.size'
+' '
+13:49:22 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:49:40 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:50:25 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:06:52 **** Clean-only build of configuration Debug for project Test ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  Test.elf.size  Test.elf
+' '
+18:06:53 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ZynqQPSK_Main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZynqQPSK_Main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZynqQPSK_Main.d" -MT"src/ZynqQPSK_Main.o" -o "src/ZynqQPSK_Main.o" "../src/ZynqQPSK_Main.c"
+'Finished building: ../src/ZynqQPSK_Main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/ZynqQPSK_Main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121308	   2580	  23328	 147216	  23f10	Test.elf
+'Finished building: Test.elf.size'
+' '
+18:10:24 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ZynqQPSK_Main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZynqQPSK_Main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZynqQPSK_Main.d" -MT"src/ZynqQPSK_Main.o" -o "src/ZynqQPSK_Main.o" "../src/ZynqQPSK_Main.c"
+../src/ZynqQPSK_Main.c: In function 'aukera':
+../src/ZynqQPSK_Main.c:128:2: error: expected ';' before 'if'
+  if(sinb >= 0 && sinb <= 3){
+  ^~
+../src/ZynqQPSK_Main.c:124:16: warning: unused variable 'kopurua' [-Wunused-variable]
+  unsigned long kopurua=0;
+                ^~~~~~~
+../src/ZynqQPSK_Main.c:123:23: warning: unused variable 'a' [-Wunused-variable]
+  unsigned int sinb=0, a=0;
+                       ^
+../src/ZynqQPSK_Main.c:122:15: warning: unused variable 'egoera' [-Wunused-variable]
+  unsigned int egoera = 0x00000000;
+               ^~~~~~
+make: *** [src/subdir.mk:26: src/ZynqQPSK_Main.o] Error 1
+18:11:10 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ZynqQPSK_Main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZynqQPSK_Main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZynqQPSK_Main.d" -MT"src/ZynqQPSK_Main.o" -o "src/ZynqQPSK_Main.o" "../src/ZynqQPSK_Main.c"
+'Finished building: ../src/ZynqQPSK_Main.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/ZynqQPSK_Main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121420	   2580	  23328	 147328	  23f80	Test.elf
+'Finished building: Test.elf.size'
+' '
+18:11:24 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ZynqQPSK_Main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZynqQPSK_Main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZynqQPSK_Main.d" -MT"src/ZynqQPSK_Main.o" -o "src/ZynqQPSK_Main.o" "../src/ZynqQPSK_Main.c"
+'Finished building: ../src/ZynqQPSK_Main.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/ZynqQPSK_Main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121420	   2580	  23328	 147328	  23f80	Test.elf
+'Finished building: Test.elf.size'
+' '
+18:12:07 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ZynqQPSK_Main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZynqQPSK_Main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZynqQPSK_Main.d" -MT"src/ZynqQPSK_Main.o" -o "src/ZynqQPSK_Main.o" "../src/ZynqQPSK_Main.c"
+'Finished building: ../src/ZynqQPSK_Main.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/ZynqQPSK_Main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121420	   2580	  23328	 147328	  23f80	Test.elf
+'Finished building: Test.elf.size'
+' '
+18:12:45 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ZynqQPSK_Main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZynqQPSK_Main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZynqQPSK_Main.d" -MT"src/ZynqQPSK_Main.o" -o "src/ZynqQPSK_Main.o" "../src/ZynqQPSK_Main.c"
+'Finished building: ../src/ZynqQPSK_Main.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/ZynqQPSK_Main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121420	   2580	  23328	 147328	  23f80	Test.elf
+'Finished building: Test.elf.size'
+' '
+18:14:42 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ZynqQPSK_Main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZynqQPSK_Main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZynqQPSK_Main.d" -MT"src/ZynqQPSK_Main.o" -o "src/ZynqQPSK_Main.o" "../src/ZynqQPSK_Main.c"
+'Finished building: ../src/ZynqQPSK_Main.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/ZynqQPSK_Main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121420	   2580	  23328	 147328	  23f80	Test.elf
+'Finished building: Test.elf.size'
+' '
+18:15:45 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ZynqQPSK_Main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZynqQPSK_Main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZynqQPSK_Main.d" -MT"src/ZynqQPSK_Main.o" -o "src/ZynqQPSK_Main.o" "../src/ZynqQPSK_Main.c"
+'Finished building: ../src/ZynqQPSK_Main.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/ZynqQPSK_Main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121420	   2580	  23328	 147328	  23f80	Test.elf
+'Finished building: Test.elf.size'
+' '

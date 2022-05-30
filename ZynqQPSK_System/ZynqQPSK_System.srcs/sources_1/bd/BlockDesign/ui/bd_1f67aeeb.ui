@@ -1,0 +1,49 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port AC_ADR0_0 -pg 1 -y -320 -defaultsOSRD
+preplace port AC_GPIO2_0 -pg 1 -y -180 -defaultsOSRD
+preplace port DDR -pg 1 -y -450 -defaultsOSRD
+preplace port AC_GPIO1_0 -pg 1 -y -220 -defaultsOSRD
+preplace port AC_GPIO3_0 -pg 1 -y -140 -defaultsOSRD
+preplace port AC_MCLK_0 -pg 1 -y -170 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y -420 -defaultsOSRD
+preplace port AC_SCK_0 -pg 1 -y -200 -defaultsOSRD
+preplace port AC_SDA_0 -pg 1 -y -140 -defaultsOSRD
+preplace port AC_ADR1_0 -pg 1 -y -260 -defaultsOSRD
+preplace port AC_GPIO0_0 -pg 1 -y -230 -defaultsOSRD
+preplace inst QPSKBlockIP_0 -pg 1 -lvl 4 -y -310 -defaultsOSRD
+preplace inst HamsterB_0 -pg 1 -lvl 5 -y -270 -defaultsOSRD
+preplace inst rst_ps7_0_48M -pg 1 -lvl 3 -y -590 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -y -340 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -y -320 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 2 4 -100J -470 330J -450 NJ -450 NJ
+preplace netloc QPSKBlockIP_0_m01_axi_tvalid 1 4 1 N
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 -60J
+preplace netloc rst_ps7_0_48M_interconnect_aresetn 1 2 2 -50 -690 300
+preplace netloc HamsterB_0_AC_MCLK 1 5 1 930J
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 2 1 -90
+preplace netloc rst_ps7_0_48M_peripheral_aresetn 1 2 2 -40 -480 310
+preplace netloc HamsterB_0_TREADY 1 3 2 330 -210 620
+preplace netloc processing_system7_0_FIXED_IO 1 2 4 -80J -460 300J -420 NJ -420 NJ
+preplace netloc clk_wiz_0_clk_out1 1 1 4 -560 -420 -70J -220 320 -220 630
+preplace netloc AC_GPIO1_0_1 1 0 5 NJ -220 NJ -220 -100J -200 NJ -200 640J
+preplace netloc HamsterB_0_AC_ADR0 1 5 1 NJ
+preplace netloc HamsterB_0_AC_GPIO0 1 5 1 940J
+preplace netloc QPSKBlockIP_0_m01_axi_tdata 1 4 1 N
+preplace netloc Net 1 5 1 910J
+preplace netloc AC_GPIO2_0_1 1 0 5 NJ -180 NJ -180 NJ -180 NJ -180 650J
+preplace netloc HamsterB_0_AC_ADR1 1 5 1 950J
+preplace netloc ps7_0_axi_periph_M00_AXI 1 3 1 NJ
+preplace netloc HamsterB_0_AC_SCK 1 5 1 920J
+preplace netloc AC_GPIO3_0_1 1 0 5 -820J -190 NJ -190 NJ -190 NJ -190 660J
+levelinfo -pg 1 -840 -580 -290 130 480 790 970 -top -790 -bot 180
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_board_cnt":"1",
+   "da_clkrst_cnt":"4",
+   "da_ps7_cnt":"1"
+}

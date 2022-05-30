@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Auto Detect" key="BlockDesign_wrapper_hw_platform_0-device"/>
+	<item value="BlockDesign_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="Local" key="BlockDesign_wrapper_hw_platform_0-target"/>
+	<item value="false" key="BlockDesign_wrapper_hw_platform_0-partial_bit"/>
+	<item value="" key="BlockDesign_wrapper_hw_platform_0-bmmFile"/>
+	<item value="BlockDesign_wrapper.bit" key="BlockDesign_wrapper_hw_platform_0-bitFile"/>
+</section>
