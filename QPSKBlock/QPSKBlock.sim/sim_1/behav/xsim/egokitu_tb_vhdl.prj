@@ -1,6 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../QPSKBlock.srcs/sim_1/imports/new/ctrl_sim.vhd" \
-
-# Do not sort compile order
-nosort

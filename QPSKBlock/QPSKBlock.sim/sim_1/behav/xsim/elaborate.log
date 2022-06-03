@@ -1,8 +1,0 @@
-Vivado Simulator 2018.3
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1cefccc57c564ecfb8db97b03131d023 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot ctrl_sim_behav xil_defaultlib.ctrl_sim -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-3009] 'ctrl' remains a black-box since it has no binding entity [C:/VivadoProjects/QPSKBlock/QPSKBlock.srcs/sim_1/imports/new/ctrl_sim.vhd:62]
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
