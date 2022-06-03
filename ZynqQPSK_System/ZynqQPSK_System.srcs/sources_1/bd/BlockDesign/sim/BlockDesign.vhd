@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
---Date        : Mon May 30 17:54:59 2022
+--Date        : Thu Jun  2 16:42:14 2022
 --Host        : DESKTOP-T22LSJU running 64-bit major release  (build 9200)
 --Command     : generate_target BlockDesign.bd
 --Design      : BlockDesign
@@ -708,6 +708,23 @@ architecture STRUCTURE of BlockDesign is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component BlockDesign_rst_ps7_0_48M_0;
+  component BlockDesign_HamsterB_0_0 is
+  port (
+    ACLK : in STD_LOGIC;
+    AC_ADR0 : out STD_LOGIC;
+    AC_ADR1 : out STD_LOGIC;
+    AC_GPIO0 : out STD_LOGIC;
+    AC_GPIO1 : in STD_LOGIC;
+    AC_GPIO2 : in STD_LOGIC;
+    AC_GPIO3 : in STD_LOGIC;
+    AC_MCLK : out STD_LOGIC;
+    AC_SCK : out STD_LOGIC;
+    AC_SDA : inout STD_LOGIC;
+    TDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    TVALID : in STD_LOGIC;
+    TREADY : out STD_LOGIC
+  );
+  end component BlockDesign_HamsterB_0_0;
   component BlockDesign_QPSKBlockIP_0_0 is
   port (
     m01_axi_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -736,23 +753,6 @@ architecture STRUCTURE of BlockDesign is
     s01_axi_aresetn : in STD_LOGIC
   );
   end component BlockDesign_QPSKBlockIP_0_0;
-  component BlockDesign_HamsterB_0_0 is
-  port (
-    ACLK : in STD_LOGIC;
-    AC_ADR0 : out STD_LOGIC;
-    AC_ADR1 : out STD_LOGIC;
-    AC_GPIO0 : out STD_LOGIC;
-    AC_GPIO1 : in STD_LOGIC;
-    AC_GPIO2 : in STD_LOGIC;
-    AC_GPIO3 : in STD_LOGIC;
-    AC_MCLK : out STD_LOGIC;
-    AC_SCK : out STD_LOGIC;
-    AC_SDA : inout STD_LOGIC;
-    TDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    TVALID : in STD_LOGIC;
-    TREADY : out STD_LOGIC
-  );
-  end component BlockDesign_HamsterB_0_0;
   signal AC_GPIO1_0_1 : STD_LOGIC;
   signal AC_GPIO2_0_1 : STD_LOGIC;
   signal AC_GPIO3_0_1 : STD_LOGIC;

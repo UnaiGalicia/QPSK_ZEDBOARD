@@ -1,7 +1,7 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Mon May 30 17:58:55 2022
+-- Date        : Thu Jun  2 16:45:33 2022
 -- Host        : DESKTOP-T22LSJU running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/BlockDesign_QPSKBlockIP_0_0_stub.vhdl

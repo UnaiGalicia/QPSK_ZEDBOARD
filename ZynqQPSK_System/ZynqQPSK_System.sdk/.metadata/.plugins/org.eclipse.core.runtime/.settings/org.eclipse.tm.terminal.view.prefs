@@ -3,6 +3,6 @@ Connectors.org.eclipse.tm.internal.terminal.serial.SerialConnector.BaudRate=1152
 Connectors.org.eclipse.tm.internal.terminal.serial.SerialConnector.DataBits=8
 Connectors.org.eclipse.tm.internal.terminal.serial.SerialConnector.FlowControl=None
 Connectors.org.eclipse.tm.internal.terminal.serial.SerialConnector.Parity=None
-Connectors.org.eclipse.tm.internal.terminal.serial.SerialConnector.SerialPort=COM9
+Connectors.org.eclipse.tm.internal.terminal.serial.SerialConnector.SerialPort=COM10
 Connectors.org.eclipse.tm.internal.terminal.serial.SerialConnector.StopBits=1
 eclipse.preferences.version=1

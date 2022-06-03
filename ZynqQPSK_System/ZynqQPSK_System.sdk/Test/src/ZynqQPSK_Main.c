@@ -47,22 +47,24 @@
 
 #include <stdio.h>
 #include "platform.h"
-#include <time.h>
 
 //#include “xparameters.h”
 
 void etengabe();
 void aukera();
+void eskatuBitak(unsigned int *m, unsigned int n);
 
 int main()
 {
 	 init_platform();
+	 unsigned int  auk=0;
 
 	 printf("QPSK Moduladorea Hamsterrarekin Zynqean\nAritz Arroita, Aintzel Bereziartua, Unai Galicia\n");
-	 int  auk=0;
+
 	 while(auk!=3){
 		 printf("Zer egin nahi dezu?\n1. lau sinboloak bata bestearen atzetik bidali etengabe\n2. Zuk aukeratutako sinbolo bat bidali\n3. Irten\n ");
 		 scanf("%d", &auk);
+
 		 switch(auk){
 
 		 	 case(1): etengabe(); break;
@@ -70,11 +72,10 @@ int main()
 		 	 case(3):break;
 		 	 default: printf("Aukera ez da egokia");
 
+		 }
 
 	 }
 
-
-	 }
 	printf("Agur!");
 	cleanup_platform();
 	return 0;
@@ -115,26 +116,41 @@ void etengabe(){
 
 
 void aukera(){
-	unsigned int egoera = 0x00000000;
-	unsigned int sinb=0, a=0;
-	unsigned long kopurua=0;
-	printf("sartu zein sinbolo nahi dezun: \n00 --> 0 tekla0\n\n01 --> 1 tekla0\n\n02 --> 2 tekla0\n\n03 --> 3 tekla0\n");
-	scanf("%d", &sinb);  //Nahiz eta seguruena sscanf
-	printf("Sartu zenbat aldiz idatzi nahi duzun sinboloa: \n");
-	scanf("%d", &sinb);
-	if(sinb >= 0 && sinb <= 3){
 
-		for(a=0; a<kopurua; a++)
+	unsigned int egoera = 0x00000000, a=0, kopurua=0;
+
+
+	printf("sartu modulatu nahi dituzun biten kopurua: \n");
+
+	do {
+			printf("BIT KOPURUA BIKOITIA IZAN BEHAR DA\n");
+			printf("Sartu bit kopurua: ");
+
+			scanf("%u", &kopurua);
+			printf("\n");
+		} while ((kopurua % 2) != 0);
+
+	unsigned int bitak[kopurua];
+
+	eskatuBitak(bitak, kopurua);
+
+
+	while(1){
+
+		for(a=0; a<kopurua; a+=2)
 		{
 			 if(*(unsigned int*)((0x43c00004)) == egoera){
 
-				 switch(sinb){
-				 case 0: *(unsigned int*)(0x43c00000)=0x0af50af4; break;
-				 case 1: *(unsigned int*)(0x43c00000)=0x4af50af4; break;
-				 case 2: *(unsigned int*)(0x43c00000)=0x8af50af4; break;
-				 case 3: *(unsigned int*)(0x43c00000)=0xfaf50af4; break;
-				 default: sinb=0;
-				 }
+				 if(bitak[a]==0 && bitak[a+1]==0)
+					 *(unsigned int*)(0x43c00000)=0x0af50af4;
+				 if(bitak[a]==0 && bitak[a+1]==1)
+				 	 *(unsigned int*)(0x43c00000)=0x4af50af4;
+				 if(bitak[a]==1 && bitak[a+1]==0)
+				 	 *(unsigned int*)(0x43c00000)=0x8af50af4;
+				 if(bitak[a]==1 && bitak[a+1]==1)
+				 	 *(unsigned int*)(0x43c00000)=0xfaf50af4;
+
+				 printf("Irakurri da - Egoera: %x\n \n", *(unsigned int*)((0x43c00004)));
 			 }
 
 			 else
@@ -143,7 +159,23 @@ void aukera(){
 
 		}
 	}
-	else
-		printf("Sartu sinbolo egoki bat\n");
+
 }
+
+void eskatuBitak(unsigned int *m, unsigned int n) {
+
+	printf("Joan bitak banan bana sartzen\n");
+
+	for (unsigned int i = 0; i < n; i++) {
+		do{
+			printf("%d. bita: ", (i + 1));
+
+			scanf("%u", &m[i]);
+
+		} while (m[i] > (unsigned int)1);
+	}
+
+
+}
+
 

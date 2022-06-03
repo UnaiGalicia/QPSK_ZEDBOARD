@@ -108,7 +108,7 @@ BEGIN
 	nsample <= '1';
 	axi_tvalid <='0';
 	audio_serie <= "00000000000000010000000000000011";
-	wait for 60 ns;
+	wait for 22 ns;
 	
     nsample <= '0';
 	axi_tvalid <='0';

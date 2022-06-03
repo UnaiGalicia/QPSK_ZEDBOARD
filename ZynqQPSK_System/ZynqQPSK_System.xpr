@@ -34,20 +34,20 @@
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSABoardId" Val="zed"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="0"/>
+    <Option Name="WTXSimLaunchSim" Val="1"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="16"/>
-    <Option Name="WTModelSimExportSim" Val="16"/>
-    <Option Name="WTQuestaExportSim" Val="16"/>
-    <Option Name="WTIesExportSim" Val="16"/>
-    <Option Name="WTVcsExportSim" Val="16"/>
-    <Option Name="WTRivieraExportSim" Val="16"/>
-    <Option Name="WTActivehdlExportSim" Val="16"/>
+    <Option Name="WTXSimExportSim" Val="19"/>
+    <Option Name="WTModelSimExportSim" Val="19"/>
+    <Option Name="WTQuestaExportSim" Val="19"/>
+    <Option Name="WTIesExportSim" Val="19"/>
+    <Option Name="WTVcsExportSim" Val="19"/>
+    <Option Name="WTRivieraExportSim" Val="19"/>
+    <Option Name="WTActivehdlExportSim" Val="19"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -71,11 +71,11 @@
         <CompFileExtendedInfo CompFileName="BlockDesign.bd" FileRelPathName="ip/BlockDesign_rst_ps7_0_48M_0/BlockDesign_rst_ps7_0_48M_0.xci">
           <Proxy FileSetName="BlockDesign_rst_ps7_0_48M_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="BlockDesign.bd" FileRelPathName="ip/BlockDesign_QPSKBlockIP_0_0/BlockDesign_QPSKBlockIP_0_0.xci">
-          <Proxy FileSetName="BlockDesign_QPSKBlockIP_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="BlockDesign.bd" FileRelPathName="ip/BlockDesign_HamsterB_0_0/BlockDesign_HamsterB_0_0.xci">
           <Proxy FileSetName="BlockDesign_HamsterB_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="BlockDesign.bd" FileRelPathName="ip/BlockDesign_QPSKBlockIP_0_0/BlockDesign_QPSKBlockIP_0_0.xci">
+          <Proxy FileSetName="BlockDesign_QPSKBlockIP_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="BlockDesign.bd" FileRelPathName="ip/BlockDesign_processing_system7_0_0/BlockDesign_processing_system7_0_0.xci">
           <Proxy FileSetName="BlockDesign_processing_system7_0_0"/>
@@ -142,15 +142,15 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="BlockDesign_QPSKBlockIP_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/BlockDesign_QPSKBlockIP_0_0">
-      <Config>
-        <Option Name="TopModule" Val="BlockDesign_QPSKBlockIP_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="BlockDesign_HamsterB_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/BlockDesign_HamsterB_0_0">
       <Config>
         <Option Name="TopModule" Val="BlockDesign_HamsterB_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="BlockDesign_QPSKBlockIP_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/BlockDesign_QPSKBlockIP_0_0">
+      <Config>
+        <Option Name="TopModule" Val="BlockDesign_QPSKBlockIP_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -201,7 +201,7 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="BlockDesign_QPSKBlockIP_0_0_synth_1" Type="Ft3:Synth" SrcSet="BlockDesign_QPSKBlockIP_0_0" Part="xc7z020clg484-1" ConstrsSet="BlockDesign_QPSKBlockIP_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/BlockDesign_QPSKBlockIP_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="BlockDesign_HamsterB_0_0_synth_1" Type="Ft3:Synth" SrcSet="BlockDesign_HamsterB_0_0" Part="xc7z020clg484-1" ConstrsSet="BlockDesign_HamsterB_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/BlockDesign_HamsterB_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -212,7 +212,7 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="BlockDesign_HamsterB_0_0_synth_1" Type="Ft3:Synth" SrcSet="BlockDesign_HamsterB_0_0" Part="xc7z020clg484-1" ConstrsSet="BlockDesign_HamsterB_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/BlockDesign_HamsterB_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="BlockDesign_QPSKBlockIP_0_0_synth_1" Type="Ft3:Synth" SrcSet="BlockDesign_QPSKBlockIP_0_0" Part="xc7z020clg484-1" ConstrsSet="BlockDesign_QPSKBlockIP_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/BlockDesign_QPSKBlockIP_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -272,7 +272,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="BlockDesign_QPSKBlockIP_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="BlockDesign_QPSKBlockIP_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="BlockDesign_QPSKBlockIP_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="BlockDesign_HamsterB_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="BlockDesign_HamsterB_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="BlockDesign_HamsterB_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
           <Desc>Default settings for Implementation.</Desc>
@@ -290,7 +290,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="BlockDesign_HamsterB_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="BlockDesign_HamsterB_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="BlockDesign_HamsterB_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="BlockDesign_QPSKBlockIP_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="BlockDesign_QPSKBlockIP_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="BlockDesign_QPSKBlockIP_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
           <Desc>Default settings for Implementation.</Desc>

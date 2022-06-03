@@ -1,0 +1,49 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/fifo_gen/simulation/fifo_generator_vlog_beh.v" into library fifo_generator_v13_2_3
+INFO: [VRFC 10-311] analyzing module fifo_generator_vlog_beh
+INFO: [VRFC 10-2458] undeclared symbol wr_rst_busy_i, assumed default net type wire [C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/fifo_gen/simulation/fifo_generator_vlog_beh.v:1249]
+INFO: [VRFC 10-2458] undeclared symbol wr_eop_ad, assumed default net type wire [C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/fifo_gen/simulation/fifo_generator_vlog_beh.v:1331]
+INFO: [VRFC 10-2458] undeclared symbol rd_eop_ad, assumed default net type wire [C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/fifo_gen/simulation/fifo_generator_vlog_beh.v:1332]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_axis, assumed default net type wire [C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/fifo_gen/simulation/fifo_generator_vlog_beh.v:1574]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_wach, assumed default net type wire [C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/fifo_gen/simulation/fifo_generator_vlog_beh.v:2099]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_wdch, assumed default net type wire [C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/fifo_gen/simulation/fifo_generator_vlog_beh.v:2319]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_wrch, assumed default net type wire [C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/fifo_gen/simulation/fifo_generator_vlog_beh.v:2486]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_rach, assumed default net type wire [C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/fifo_gen/simulation/fifo_generator_vlog_beh.v:2866]
+INFO: [VRFC 10-2458] undeclared symbol rd_rst_busy_rdch, assumed default net type wire [C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/fifo_gen/simulation/fifo_generator_vlog_beh.v:3099]
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_2_3_CONV_VER
+INFO: [VRFC 10-2458] undeclared symbol safety_ckt_rd_rst, assumed default net type wire [C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/fifo_gen/simulation/fifo_generator_vlog_beh.v:4153]
+INFO: [VRFC 10-2458] undeclared symbol safety_ckt_rd_rst, assumed default net type wire [C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/fifo_gen/simulation/fifo_generator_vlog_beh.v:4361]
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_2_3_sync_stage
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_2_3_bhv_ver_as
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_2_3_beh_ver_ll_afifo
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_2_3_bhv_ver_ss
+INFO: [VRFC 10-2458] undeclared symbol srst_wrst_busy, assumed default net type wire [C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/fifo_gen/simulation/fifo_generator_vlog_beh.v:7793]
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_2_3_bhv_ver_preload0
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_2_3_axic_reg_slice
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/fifo_gen/hdl/fifo_generator_v13_2_rfs.v" into library fifo_generator_v13_2_3
+INFO: [VRFC 10-311] analyzing module fifo_generator_v13_2_3
+INFO: [VRFC 10-2458] undeclared symbol sleep_i, assumed default net type wire [C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/fifo_gen/hdl/fifo_generator_v13_2_rfs.v:519]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.ip_user_files/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/fifo_gen/sim/fifo_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/blk_mem_gen_0/simulation/blk_mem_gen_v8_4.v" into library blk_mem_gen_v8_4_2
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_4
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_4
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_2_output_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_2_softecc_output_reg_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_2_mem_module
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.ip_user_files/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.ip_user_files/bd/BlockDesign/ip/BlockDesign_processing_system7_0_0/sim/BlockDesign_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BlockDesign_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.ip_user_files/bd/BlockDesign/ip/BlockDesign_auto_pc_0/sim/BlockDesign_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BlockDesign_auto_pc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

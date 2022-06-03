@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon May 30 17:56:39 2022
-# Process ID: 3704
+# Start of session at: Thu Jun  2 16:42:53 2022
+# Process ID: 7048
 # Current directory: C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.runs/BlockDesign_QPSKBlockIP_0_0_synth_1
 # Command line: vivado.exe -log BlockDesign_QPSKBlockIP_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BlockDesign_QPSKBlockIP_0_0.tcl
 # Log file: C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.runs/BlockDesign_QPSKBlockIP_0_0_synth_1/BlockDesign_QPSKBlockIP_0_0.vds
@@ -18,32 +18,32 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 8008 
+INFO: Helper process launched with PID 10816 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 470.242 ; gain = 97.652
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 470.832 ; gain = 98.066
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'BlockDesign_QPSKBlockIP_0_0' [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/synth/BlockDesign_QPSKBlockIP_0_0.vhd:85]
 	Parameter C_S01_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S01_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'QPSKBlockIP_v1_0' declared at 'c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/9b07/hdl/QPSKBlockIP_v1_0.vhd:5' bound to instance 'U0' of component 'QPSKBlockIP_v1_0' [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/synth/BlockDesign_QPSKBlockIP_0_0.vhd:152]
-INFO: [Synth 8-638] synthesizing module 'QPSKBlockIP_v1_0' [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/9b07/hdl/QPSKBlockIP_v1_0.vhd:52]
+INFO: [Synth 8-3491] module 'QPSKBlockIP_v1_0' declared at 'c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/64ac/hdl/QPSKBlockIP_v1_0.vhd:5' bound to instance 'U0' of component 'QPSKBlockIP_v1_0' [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/synth/BlockDesign_QPSKBlockIP_0_0.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'QPSKBlockIP_v1_0' [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/64ac/hdl/QPSKBlockIP_v1_0.vhd:52]
 	Parameter C_S01_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S01_AXI_ADDR_WIDTH bound to: 4 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'QPSKBlockIP_v1_0_S01_AXI' declared at 'c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/9b07/hdl/QPSKBlockIP_v1_0_S01_AXI.vhd:5' bound to instance 'QPSKBlockIP_v1_0_S01_AXI_inst' of component 'QPSKBlockIP_v1_0_S01_AXI' [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/9b07/hdl/QPSKBlockIP_v1_0.vhd:91]
-INFO: [Synth 8-638] synthesizing module 'QPSKBlockIP_v1_0_S01_AXI' [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/9b07/hdl/QPSKBlockIP_v1_0_S01_AXI.vhd:88]
+INFO: [Synth 8-3491] module 'QPSKBlockIP_v1_0_S01_AXI' declared at 'c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/64ac/hdl/QPSKBlockIP_v1_0_S01_AXI.vhd:5' bound to instance 'QPSKBlockIP_v1_0_S01_AXI_inst' of component 'QPSKBlockIP_v1_0_S01_AXI' [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/64ac/hdl/QPSKBlockIP_v1_0.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'QPSKBlockIP_v1_0_S01_AXI' [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/64ac/hdl/QPSKBlockIP_v1_0_S01_AXI.vhd:88]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-226] default block is never used [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/9b07/hdl/QPSKBlockIP_v1_0_S01_AXI.vhd:247]
-INFO: [Synth 8-226] default block is never used [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/9b07/hdl/QPSKBlockIP_v1_0_S01_AXI.vhd:378]
-INFO: [Synth 8-3491] module 'QPSK' declared at 'c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/9b07/src/QPSK.vhd:26' bound to instance 'Inst_QPSK' of component 'QPSK' [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/9b07/hdl/QPSKBlockIP_v1_0_S01_AXI.vhd:433]
-INFO: [Synth 8-638] synthesizing module 'QPSK' [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/9b07/src/QPSK.vhd:39]
-INFO: [Synth 8-3491] module 'control' declared at 'c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/9b07/src/control.vhd:28' bound to instance 'Inst_control' of component 'control' [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/9b07/src/QPSK.vhd:94]
-INFO: [Synth 8-638] synthesizing module 'control' [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/9b07/src/control.vhd:42]
-INFO: [Synth 8-226] default block is never used [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/9b07/src/control.vhd:76]
-INFO: [Synth 8-256] done synthesizing module 'control' (1#1) [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/9b07/src/control.vhd:42]
-INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at 'c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:59' bound to instance 'Inst_blk_mem_gen_0' of component 'blk_mem_gen_0' [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/9b07/src/QPSK.vhd:107]
+INFO: [Synth 8-226] default block is never used [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/64ac/hdl/QPSKBlockIP_v1_0_S01_AXI.vhd:247]
+INFO: [Synth 8-226] default block is never used [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/64ac/hdl/QPSKBlockIP_v1_0_S01_AXI.vhd:378]
+INFO: [Synth 8-3491] module 'QPSK' declared at 'c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/64ac/src/QPSK.vhd:26' bound to instance 'Inst_QPSK' of component 'QPSK' [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/64ac/hdl/QPSKBlockIP_v1_0_S01_AXI.vhd:433]
+INFO: [Synth 8-638] synthesizing module 'QPSK' [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/64ac/src/QPSK.vhd:39]
+INFO: [Synth 8-3491] module 'control' declared at 'c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/64ac/src/control.vhd:28' bound to instance 'Inst_control' of component 'control' [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/64ac/src/QPSK.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'control' [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/64ac/src/control.vhd:42]
+INFO: [Synth 8-226] default block is never used [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/64ac/src/control.vhd:77]
+INFO: [Synth 8-256] done synthesizing module 'control' (1#1) [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/64ac/src/control.vhd:42]
+INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at 'c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:59' bound to instance 'Inst_blk_mem_gen_0' of component 'blk_mem_gen_0' [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/64ac/src/QPSK.vhd:107]
 INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:68]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
@@ -122,7 +122,7 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [c:/VivadoProjects/ZynqQ
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     2.7928 mW - type: string 
 INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_2' declared at 'c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/fifo_gen/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_2' [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:232]
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (10#1) [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:68]
-INFO: [Synth 8-3491] module 'fifo_gen' declared at 'c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/fifo_gen/synth/fifo_gen.vhd:59' bound to instance 'Inst_fifo_gen' of component 'fifo_gen' [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/9b07/src/QPSK.vhd:117]
+INFO: [Synth 8-3491] module 'fifo_gen' declared at 'c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/fifo_gen/synth/fifo_gen.vhd:59' bound to instance 'Inst_fifo_gen' of component 'fifo_gen' [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/64ac/src/QPSK.vhd:117]
 INFO: [Synth 8-638] synthesizing module 'fifo_gen' [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/fifo_gen/synth/fifo_gen.vhd:72]
 	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
 	Parameter C_SELECT_XPM bound to: 0 - type: integer 
@@ -328,11 +328,11 @@ INFO: [Synth 8-638] synthesizing module 'fifo_gen' [c:/VivadoProjects/ZynqQPSK_S
 	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
 INFO: [Synth 8-3491] module 'fifo_generator_v13_2_3' declared at 'c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/fifo_gen/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38578' bound to instance 'U0' of component 'fifo_generator_v13_2_3' [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/fifo_gen/synth/fifo_gen.vhd:540]
 INFO: [Synth 8-256] done synthesizing module 'fifo_gen' (28#1) [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/fifo_gen/synth/fifo_gen.vhd:72]
-INFO: [Synth 8-256] done synthesizing module 'QPSK' (29#1) [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/9b07/src/QPSK.vhd:39]
-WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/9b07/hdl/QPSKBlockIP_v1_0_S01_AXI.vhd:245]
-WARNING: [Synth 8-6014] Unused sequential element data_reg was removed.  [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/9b07/hdl/QPSKBlockIP_v1_0_S01_AXI.vhd:426]
-INFO: [Synth 8-256] done synthesizing module 'QPSKBlockIP_v1_0_S01_AXI' (30#1) [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/9b07/hdl/QPSKBlockIP_v1_0_S01_AXI.vhd:88]
-INFO: [Synth 8-256] done synthesizing module 'QPSKBlockIP_v1_0' (31#1) [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/9b07/hdl/QPSKBlockIP_v1_0.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'QPSK' (29#1) [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/64ac/src/QPSK.vhd:39]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/64ac/hdl/QPSKBlockIP_v1_0_S01_AXI.vhd:245]
+WARNING: [Synth 8-6014] Unused sequential element data_reg was removed.  [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/64ac/hdl/QPSKBlockIP_v1_0_S01_AXI.vhd:426]
+INFO: [Synth 8-256] done synthesizing module 'QPSKBlockIP_v1_0_S01_AXI' (30#1) [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/64ac/hdl/QPSKBlockIP_v1_0_S01_AXI.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'QPSKBlockIP_v1_0' (31#1) [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/64ac/hdl/QPSKBlockIP_v1_0.vhd:52]
 INFO: [Synth 8-256] done synthesizing module 'BlockDesign_QPSKBlockIP_0_0' (32#1) [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/synth/BlockDesign_QPSKBlockIP_0_0.vhd:85]
 WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port RST_FULL_FF
 WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_RST
@@ -436,7 +436,7 @@ WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_A
 WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_ASSERT[4]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:41 ; elapsed = 00:01:43 . Memory (MB): peak = 833.527 ; gain = 460.938
+Finished RTL Elaboration : Time (s): cpu = 00:01:48 ; elapsed = 00:01:54 . Memory (MB): peak = 827.777 ; gain = 455.012
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -449,10 +449,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:41 ; elapsed = 00:01:44 . Memory (MB): peak = 833.527 ; gain = 460.938
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:48 ; elapsed = 00:01:54 . Memory (MB): peak = 827.777 ; gain = 455.012
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:41 ; elapsed = 00:01:44 . Memory (MB): peak = 833.527 ; gain = 460.938
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:48 ; elapsed = 00:01:54 . Memory (MB): peak = 827.777 ; gain = 455.012
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -467,26 +467,26 @@ Parsing XDC File [C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.runs/BlockDe
 Finished Parsing XDC File [C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.runs/BlockDesign_QPSKBlockIP_0_0_synth_1/dont_touch.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.runs/BlockDesign_QPSKBlockIP_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/BlockDesign_QPSKBlockIP_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/BlockDesign_QPSKBlockIP_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 888.594 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 886.570 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 889.746 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 887.746 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 889.746 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 889.746 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 887.746 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 887.746 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:50 ; elapsed = 00:01:54 . Memory (MB): peak = 889.746 ; gain = 517.156
+Finished Constraint Validation : Time (s): cpu = 00:01:59 ; elapsed = 00:02:05 . Memory (MB): peak = 887.746 ; gain = 514.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:50 ; elapsed = 00:01:54 . Memory (MB): peak = 889.746 ; gain = 517.156
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:59 ; elapsed = 00:02:05 . Memory (MB): peak = 887.746 ; gain = 514.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -495,13 +495,14 @@ Applied set_property DONT_TOUCH = true for U0/QPSKBlockIP_v1_0_S01_AXI_inst/Inst
 Applied set_property DONT_TOUCH = true for U0/QPSKBlockIP_v1_0_S01_AXI_inst/Inst_QPSK/Inst_fifo_gen. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for U0/QPSKBlockIP_v1_0_S01_AXI_inst/Inst_QPSK/Inst_blk_mem_gen_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:50 ; elapsed = 00:01:54 . Memory (MB): peak = 889.746 ; gain = 517.156
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:59 ; elapsed = 00:02:05 . Memory (MB): peak = 887.746 ; gain = 514.980
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/9b07/src/control.vhd:130]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/64ac/src/control.vhd:135]
 INFO: [Synth 8-5546] ROM "kont" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "done1" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "leaving_empty_fwft" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:51 ; elapsed = 00:01:55 . Memory (MB): peak = 889.746 ; gain = 517.156
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:00 ; elapsed = 00:02:06 . Memory (MB): peak = 887.746 ; gain = 514.980
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -526,7 +527,7 @@ Detailed RTL Component Info :
 	                7 Bit    Registers := 1     
 	                4 Bit    Registers := 2     
 	                2 Bit    Registers := 3     
-	                1 Bit    Registers := 25    
+	                1 Bit    Registers := 26    
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 3     
 	   4 Input     32 Bit        Muxes := 4     
@@ -534,9 +535,9 @@ Detailed RTL Component Info :
 	   2 Input      7 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 4     
 	   5 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 29    
+	   2 Input      1 Bit        Muxes := 27    
+	   4 Input      1 Bit        Muxes := 3     
 	   3 Input      1 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -552,11 +553,12 @@ Detailed RTL Component Info :
 +---Registers : 
 	                8 Bit    Registers := 3     
 	                7 Bit    Registers := 1     
-	                1 Bit    Registers := 6     
+	                1 Bit    Registers := 7     
 +---Muxes : 
 	   2 Input      8 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 18    
+	   2 Input      1 Bit        Muxes := 16    
+	   4 Input      1 Bit        Muxes := 1     
 Module memory 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -645,7 +647,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/QPSKB
 INFO: [Synth 8-3886] merging instance 'U0/QPSKBlockIP_v1_0_S01_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'U0/QPSKBlockIP_v1_0_S01_AXI_inst/axi_bresp_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/QPSKBlockIP_v1_0_S01_AXI_inst/axi_bresp_reg[1] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:52 ; elapsed = 00:01:56 . Memory (MB): peak = 889.746 ; gain = 517.156
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:02 ; elapsed = 00:02:09 . Memory (MB): peak = 887.746 ; gain = 514.980
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -657,13 +659,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:00 ; elapsed = 00:02:04 . Memory (MB): peak = 890.133 ; gain = 517.543
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:12 ; elapsed = 00:02:21 . Memory (MB): peak = 887.746 ; gain = 514.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:00 ; elapsed = 00:02:04 . Memory (MB): peak = 890.355 ; gain = 517.766
+Finished Timing Optimization : Time (s): cpu = 00:02:12 ; elapsed = 00:02:21 . Memory (MB): peak = 887.746 ; gain = 514.980
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -675,7 +677,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:00 ; elapsed = 00:02:04 . Memory (MB): peak = 909.746 ; gain = 537.156
+Finished Technology Mapping : Time (s): cpu = 00:02:12 ; elapsed = 00:02:22 . Memory (MB): peak = 904.223 ; gain = 531.457
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -699,7 +701,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:01 ; elapsed = 00:02:05 . Memory (MB): peak = 909.746 ; gain = 537.156
+Finished IO Insertion : Time (s): cpu = 00:02:14 ; elapsed = 00:02:24 . Memory (MB): peak = 904.223 ; gain = 531.457
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -712,7 +714,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:01 ; elapsed = 00:02:05 . Memory (MB): peak = 909.746 ; gain = 537.156
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:14 ; elapsed = 00:02:24 . Memory (MB): peak = 904.223 ; gain = 531.457
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -724,25 +726,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:01 ; elapsed = 00:02:05 . Memory (MB): peak = 909.746 ; gain = 537.156
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:14 ; elapsed = 00:02:24 . Memory (MB): peak = 904.223 ; gain = 531.457
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:01 ; elapsed = 00:02:05 . Memory (MB): peak = 909.746 ; gain = 537.156
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:14 ; elapsed = 00:02:24 . Memory (MB): peak = 904.223 ; gain = 531.457
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:01 ; elapsed = 00:02:05 . Memory (MB): peak = 909.746 ; gain = 537.156
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:14 ; elapsed = 00:02:24 . Memory (MB): peak = 904.223 ; gain = 531.457
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:01 ; elapsed = 00:02:05 . Memory (MB): peak = 909.746 ; gain = 537.156
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:14 ; elapsed = 00:02:24 . Memory (MB): peak = 904.223 ; gain = 531.457
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -760,15 +762,15 @@ Report Cell Usage:
 +------+-----------+------+
 |1     |CARRY4     |     2|
 |2     |LUT1       |     7|
-|3     |LUT2       |    19|
-|4     |LUT3       |     8|
-|5     |LUT4       |    46|
-|6     |LUT5       |    51|
-|7     |LUT6       |    16|
+|3     |LUT2       |    18|
+|4     |LUT3       |     9|
+|5     |LUT4       |    44|
+|6     |LUT5       |    56|
+|7     |LUT6       |    20|
 |8     |MUXCY      |    20|
 |9     |RAMB18E1   |     1|
 |10    |RAMB18E1_1 |     1|
-|11    |FDRE       |   244|
+|11    |FDRE       |   245|
 |12    |FDSE       |    13|
 +------+-----------+------+
 
@@ -776,10 +778,10 @@ Report Instance Areas:
 +------+---------------------------------------------------------------+-----------------------------------------+------+
 |      |Instance                                                       |Module                                   |Cells |
 +------+---------------------------------------------------------------+-----------------------------------------+------+
-|1     |top                                                            |                                         |   428|
-|2     |  U0                                                           |QPSKBlockIP_v1_0                         |   428|
-|3     |    QPSKBlockIP_v1_0_S01_AXI_inst                              |QPSKBlockIP_v1_0_S01_AXI                 |   428|
-|4     |      Inst_QPSK                                                |QPSK                                     |   230|
+|1     |top                                                            |                                         |   436|
+|2     |  U0                                                           |QPSKBlockIP_v1_0                         |   436|
+|3     |    QPSKBlockIP_v1_0_S01_AXI_inst                              |QPSKBlockIP_v1_0_S01_AXI                 |   436|
+|4     |      Inst_QPSK                                                |QPSK                                     |   238|
 |5     |        Inst_blk_mem_gen_0                                     |blk_mem_gen_0                            |     1|
 |6     |          U0                                                   |blk_mem_gen_v8_4_2                       |     1|
 |7     |            inst_blk_mem_gen                                   |blk_mem_gen_v8_4_2_synth                 |     1|
@@ -810,37 +812,37 @@ Report Instance Areas:
 |32    |                          \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized0 |     1|
 |33    |                            \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized0   |     1|
 |34    |                              \prim_noinit.ram                 |blk_mem_gen_prim_wrapper                 |     1|
-|35    |        Inst_control                                           |control                                  |    74|
+|35    |        Inst_control                                           |control                                  |    82|
 +------+---------------------------------------------------------------+-----------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:01 ; elapsed = 00:02:05 . Memory (MB): peak = 909.746 ; gain = 537.156
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:14 ; elapsed = 00:02:24 . Memory (MB): peak = 904.223 ; gain = 531.457
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 660 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:01:58 . Memory (MB): peak = 909.746 ; gain = 480.938
-Synthesis Optimization Complete : Time (s): cpu = 00:02:01 ; elapsed = 00:02:05 . Memory (MB): peak = 909.746 ; gain = 537.156
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:02:16 . Memory (MB): peak = 904.223 ; gain = 471.488
+Synthesis Optimization Complete : Time (s): cpu = 00:02:15 ; elapsed = 00:02:24 . Memory (MB): peak = 904.223 ; gain = 531.457
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 914.828 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 908.793 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 8 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 8 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-65 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+66 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:05 ; elapsed = 00:02:08 . Memory (MB): peak = 914.828 ; gain = 553.738
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 914.828 ; gain = 0.000
+synth_design: Time (s): cpu = 00:02:18 ; elapsed = 00:02:28 . Memory (MB): peak = 908.793 ; gain = 547.508
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 908.793 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.runs/BlockDesign_QPSKBlockIP_0_0_synth_1/BlockDesign_QPSKBlockIP_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP BlockDesign_QPSKBlockIP_0_0, cache-ID = b3db7144be78fc83
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP BlockDesign_QPSKBlockIP_0_0, cache-ID = af5841a0da821861
 INFO: [Coretcl 2-1174] Renamed 34 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 914.828 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 908.793 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.runs/BlockDesign_QPSKBlockIP_0_0_synth_1/BlockDesign_QPSKBlockIP_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file BlockDesign_QPSKBlockIP_0_0_utilization_synth.rpt -pb BlockDesign_QPSKBlockIP_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon May 30 17:58:55 2022...
+INFO: [Common 17-206] Exiting Vivado at Thu Jun  2 16:45:33 2022...

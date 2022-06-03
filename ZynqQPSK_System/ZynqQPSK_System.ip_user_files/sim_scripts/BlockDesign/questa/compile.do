@@ -68,19 +68,19 @@ vlog -work xil_defaultlib -64 "+incdir+../../../../ZynqQPSK_System.srcs/sources_
 "../../../bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/src/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
 
 vcom -work xil_defaultlib -64 -93 \
-"../../../bd/BlockDesign/ipshared/9b07/src/QPSK.vhd" \
-"../../../bd/BlockDesign/ipshared/9b07/hdl/QPSKBlockIP_v1_0_S01_AXI.vhd" \
-"../../../bd/BlockDesign/ipshared/9b07/src/control.vhd" \
-"../../../bd/BlockDesign/ipshared/9b07/hdl/QPSKBlockIP_v1_0.vhd" \
+"../../../bd/BlockDesign/ipshared/64ac/src/QPSK.vhd" \
+"../../../bd/BlockDesign/ipshared/64ac/hdl/QPSKBlockIP_v1_0_S01_AXI.vhd" \
+"../../../bd/BlockDesign/ipshared/64ac/src/control.vhd" \
+"../../../bd/BlockDesign/ipshared/64ac/hdl/QPSKBlockIP_v1_0.vhd" \
 "../../../bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/sim/BlockDesign_QPSKBlockIP_0_0.vhd" \
-"../../../bd/BlockDesign/ipshared/8743/src/i3c2.vhd" \
-"../../../bd/BlockDesign/ipshared/8743/src/adau1761_configuraiton_data.vhd" \
-"../../../bd/BlockDesign/ipshared/8743/src/i2s_data_interface.vhd" \
-"../../../bd/BlockDesign/ipshared/8743/src/i2c.vhd" \
-"../../../bd/BlockDesign/ipshared/8743/src/ADAU1761_interface.vhd" \
-"../../../bd/BlockDesign/ipshared/8743/src/adau1761_izedboard.vhd" \
-"../../../bd/BlockDesign/ipshared/8743/src/qpsk_egokitu.vhd" \
-"../../../bd/BlockDesign/ipshared/8743/src/adau1761_test.vhd" \
+"../../../bd/BlockDesign/ipshared/6b7a/src/i3c2.vhd" \
+"../../../bd/BlockDesign/ipshared/6b7a/src/adau1761_configuraiton_data.vhd" \
+"../../../bd/BlockDesign/ipshared/6b7a/src/i2s_data_interface.vhd" \
+"../../../bd/BlockDesign/ipshared/6b7a/src/i2c.vhd" \
+"../../../bd/BlockDesign/ipshared/6b7a/src/ADAU1761_interface.vhd" \
+"../../../bd/BlockDesign/ipshared/6b7a/src/adau1761_izedboard.vhd" \
+"../../../bd/BlockDesign/ipshared/6b7a/src/qpsk_egokitu.vhd" \
+"../../../bd/BlockDesign/ipshared/6b7a/src/adau1761_test.vhd" \
 "../../../bd/BlockDesign/ip/BlockDesign_HamsterB_0_0/sim/BlockDesign_HamsterB_0_0.vhd" \
 
 vlog -work axi_infrastructure_v1_1_0 -64 "+incdir+../../../../ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/ec67/hdl" "+incdir+../../../../ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ipshared/70cf/hdl" "+incdir+../../../../ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_processing_system7_0_0" "+incdir+C:/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \

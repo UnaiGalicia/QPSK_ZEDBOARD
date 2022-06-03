@@ -74,7 +74,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e84a2398</spirit:value>
+            <spirit:value>4012bf38</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -90,7 +90,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>c4707a3c</spirit:value>
+            <spirit:value>cf4ebb64</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -448,11 +448,11 @@
       </xilinx:taxonomies>
       <xilinx:displayName>HamsterIP</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:coreRevision>3</xilinx:coreRevision>
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>xilinx.com:user:adau1761_test:1.0</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2022-05-30T15:38:11Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2022-06-02T11:41:54Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@3382ef1f_ARCHIVE_LOCATION">c:/vivadoprojects/ip_repo/Hamster_IP_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@14e74d9_ARCHIVE_LOCATION">c:/vivadoprojects/ip_repo/Hamster_IP_1.0</xilinx:tag>
@@ -477,12 +477,23 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@1e1c9162_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/Hamster_IP_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@2054dc17_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/Hamster_IP_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@1ce0c624_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/Hamster_IP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76d86698_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/Hamster_IP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14c2fc9e_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/Hamster_IP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e0463e5_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/Hamster_IP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c0b296c_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/Hamster_IP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@198a9140_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/Hamster_IP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1184cf26_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/Hamster_IP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5085f157_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/Hamster_IP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12a3ab53_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/Hamster_IP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@367d7322_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/Hamster_IP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41385d8_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/Hamster_IP_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@415cb15b_ARCHIVE_LOCATION">c:/VivadoProjects/ip_repo/Hamster_IP_1.0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="a7ad5b25"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="dac39f06"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="cae835f5"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="ce37c5da"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="220bd06e"/>
     </xilinx:packagingInfo>

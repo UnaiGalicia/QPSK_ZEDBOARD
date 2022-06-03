@@ -1,7 +1,7 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Mon May 30 17:58:55 2022
+-- Date        : Thu Jun  2 16:45:33 2022
 -- Host        : DESKTOP-T22LSJU running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/BlockDesign_QPSKBlockIP_0_0_sim_netlist.vhdl
@@ -16,14 +16,14 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity BlockDesign_QPSKBlockIP_0_0_control is
   port (
-    rd_en : out STD_LOGIC;
     m01_axi_tvalid : out STD_LOGIC;
+    rd_en : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 7 downto 0 );
     rst : in STD_LOGIC;
     s01_axi_aclk : in STD_LOGIC;
     empty : in STD_LOGIC;
-    m01_axi_tready : in STD_LOGIC;
-    dout : in STD_LOGIC_VECTOR ( 1 downto 0 )
+    dout : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    m01_axi_tready : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of BlockDesign_QPSKBlockIP_0_0_control : entity is "control";
@@ -31,23 +31,30 @@ end BlockDesign_QPSKBlockIP_0_0_control;
 
 architecture STRUCTURE of BlockDesign_QPSKBlockIP_0_0_control is
   signal addr : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal \address[7]_i_1_n_0\ : STD_LOGIC;
-  signal done_i_1_n_0 : STD_LOGIC;
-  signal done_i_2_n_0 : STD_LOGIC;
+  signal done1 : STD_LOGIC;
+  signal done1_i_1_n_0 : STD_LOGIC;
+  signal done1_i_2_n_0 : STD_LOGIC;
+  signal done1_i_3_n_0 : STD_LOGIC;
+  signal done1_i_4_n_0 : STD_LOGIC;
+  signal done1_i_6_n_0 : STD_LOGIC;
+  signal done1_reg_n_0 : STD_LOGIC;
+  signal following3_out : STD_LOGIC;
   signal following_i_1_n_0 : STD_LOGIC;
+  signal following_i_3_n_0 : STD_LOGIC;
   signal \in\ : STD_LOGIC;
   signal \kont[4]_i_2_n_0\ : STD_LOGIC;
   signal \kont[5]_i_2_n_0\ : STD_LOGIC;
   signal \kont[6]_i_1_n_0\ : STD_LOGIC;
   signal \kont[6]_i_2_n_0\ : STD_LOGIC;
   signal \kont[6]_i_4_n_0\ : STD_LOGIC;
+  signal \kont[6]_i_5_n_0\ : STD_LOGIC;
   signal \kont_reg__0\ : STD_LOGIC_VECTOR ( 6 downto 0 );
   signal lock_i_1_n_0 : STD_LOGIC;
   signal lock_reg_n_0 : STD_LOGIC;
-  signal \^m01_axi_tvalid\ : STD_LOGIC;
   signal neg_i_1_n_0 : STD_LOGIC;
   signal \p_0_in__0\ : STD_LOGIC_VECTOR ( 6 downto 0 );
   signal \p_0_in__1\ : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal p_12_in : STD_LOGIC;
   signal \^rd_en\ : STD_LOGIC;
   signal \start0_carry__0_i_1_n_0\ : STD_LOGIC;
   signal \start0_carry__0_i_2_n_0\ : STD_LOGIC;
@@ -77,19 +84,22 @@ architecture STRUCTURE of BlockDesign_QPSKBlockIP_0_0_control is
   signal \NLW_start0_carry__0_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
   signal \NLW_start0_carry__0_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of done_i_2 : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of \kont[0]_i_1\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \kont[1]_i_1\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of \kont[2]_i_1\ : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of done1_i_2 : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of done1_i_5 : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of following_i_2 : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of \kont[0]_i_1\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \kont[1]_i_1\ : label is "soft_lutpair11";
   attribute SOFT_HLUTNM of \kont[4]_i_2\ : label is "soft_lutpair9";
-  attribute SOFT_HLUTNM of \kont[5]_i_1\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \kont[6]_i_3\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \kont[5]_i_1\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \kont[6]_i_3\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \kont[6]_i_4\ : label is "soft_lutpair8";
+  attribute SOFT_HLUTNM of lock_i_1 : label is "soft_lutpair7";
   attribute METHODOLOGY_DRC_VIOS : string;
   attribute METHODOLOGY_DRC_VIOS of start0_carry : label is "{SYNTH-8 {cell *THIS*}}";
   attribute METHODOLOGY_DRC_VIOS of \start0_carry__0\ : label is "{SYNTH-8 {cell *THIS*}}";
-  attribute SOFT_HLUTNM of waitfifo_i_1 : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of \start[1]_i_1\ : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of waitfifo_i_1 : label is "soft_lutpair8";
 begin
-  m01_axi_tvalid <= \^m01_axi_tvalid\;
   rd_en <= \^rd_en\;
 \addr_reg[0]\: unisim.vcomponents.FDRE
     generic map(
@@ -185,7 +195,7 @@ begin
     )
         port map (
       I0 => rst,
-      O => \address[7]_i_1_n_0\
+      O => p_12_in
     );
 \address_reg[0]\: unisim.vcomponents.FDRE
     generic map(
@@ -193,7 +203,7 @@ begin
     )
         port map (
       C => s01_axi_aclk,
-      CE => \address[7]_i_1_n_0\,
+      CE => p_12_in,
       D => addr(0),
       Q => Q(0),
       R => '0'
@@ -204,7 +214,7 @@ begin
     )
         port map (
       C => s01_axi_aclk,
-      CE => \address[7]_i_1_n_0\,
+      CE => p_12_in,
       D => addr(1),
       Q => Q(1),
       R => '0'
@@ -215,7 +225,7 @@ begin
     )
         port map (
       C => s01_axi_aclk,
-      CE => \address[7]_i_1_n_0\,
+      CE => p_12_in,
       D => addr(2),
       Q => Q(2),
       R => '0'
@@ -226,7 +236,7 @@ begin
     )
         port map (
       C => s01_axi_aclk,
-      CE => \address[7]_i_1_n_0\,
+      CE => p_12_in,
       D => addr(3),
       Q => Q(3),
       R => '0'
@@ -237,7 +247,7 @@ begin
     )
         port map (
       C => s01_axi_aclk,
-      CE => \address[7]_i_1_n_0\,
+      CE => p_12_in,
       D => addr(4),
       Q => Q(4),
       R => '0'
@@ -248,7 +258,7 @@ begin
     )
         port map (
       C => s01_axi_aclk,
-      CE => \address[7]_i_1_n_0\,
+      CE => p_12_in,
       D => addr(5),
       Q => Q(5),
       R => '0'
@@ -259,7 +269,7 @@ begin
     )
         port map (
       C => s01_axi_aclk,
-      CE => \address[7]_i_1_n_0\,
+      CE => p_12_in,
       D => addr(6),
       Q => Q(6),
       R => '0'
@@ -270,32 +280,95 @@ begin
     )
         port map (
       C => s01_axi_aclk,
-      CE => \address[7]_i_1_n_0\,
+      CE => p_12_in,
       D => addr(7),
       Q => Q(7),
       R => '0'
     );
-done_i_1: unisim.vcomponents.LUT6
+done1_i_1: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"B0BFB0BF8080808F"
+      INIT => X"FFFFFFF1111111F1"
+    )
+        port map (
+      I0 => rst,
+      I1 => done1_i_2_n_0,
+      I2 => done1_reg_n_0,
+      I3 => done1_i_3_n_0,
+      I4 => done1_i_4_n_0,
+      I5 => done1,
+      O => done1_i_1_n_0
+    );
+done1_i_2: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"FE"
+    )
+        port map (
+      I0 => empty,
+      I1 => waitfifo_reg_n_0,
+      I2 => lock_reg_n_0,
+      O => done1_i_2_n_0
+    );
+done1_i_3: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"000C000C00AA00AE"
+    )
+        port map (
+      I0 => empty,
+      I1 => done1_i_6_n_0,
+      I2 => \kont_reg__0\(0),
+      I3 => rst,
+      I4 => waitfifo_reg_n_0,
+      I5 => lock_reg_n_0,
+      O => done1_i_3_n_0
+    );
+done1_i_4: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"1500150000001500"
+    )
+        port map (
+      I0 => rst,
+      I1 => m01_axi_tready,
+      I2 => done1_reg_n_0,
+      I3 => lock_reg_n_0,
+      I4 => \kont_reg__0\(6),
+      I5 => \kont[6]_i_5_n_0\,
+      O => done1_i_4_n_0
+    );
+done1_i_5: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"08080008"
     )
         port map (
       I0 => m01_axi_tready,
-      I1 => done_i_2_n_0,
-      I2 => lock_reg_n_0,
-      I3 => empty,
-      I4 => waitfifo_reg_n_0,
-      I5 => \^m01_axi_tvalid\,
-      O => done_i_1_n_0
+      I1 => lock_reg_n_0,
+      I2 => done1_reg_n_0,
+      I3 => \kont_reg__0\(6),
+      I4 => \kont[6]_i_5_n_0\,
+      O => done1
     );
-done_i_2: unisim.vcomponents.LUT2
+done1_i_6: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"B"
+      INIT => X"0000000000000001"
     )
         port map (
-      I0 => \kont[6]_i_4_n_0\,
-      I1 => \kont_reg__0\(6),
-      O => done_i_2_n_0
+      I0 => \kont_reg__0\(3),
+      I1 => \kont_reg__0\(4),
+      I2 => \kont_reg__0\(1),
+      I3 => \kont_reg__0\(2),
+      I4 => \kont_reg__0\(6),
+      I5 => \kont_reg__0\(5),
+      O => done1_i_6_n_0
+    );
+done1_reg: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => s01_axi_aclk,
+      CE => '1',
+      D => done1_i_1_n_0,
+      Q => done1_reg_n_0,
+      R => '0'
     );
 done_reg: unisim.vcomponents.FDRE
     generic map(
@@ -304,21 +377,46 @@ done_reg: unisim.vcomponents.FDRE
         port map (
       C => s01_axi_aclk,
       CE => '1',
-      D => done_i_1_n_0,
-      Q => \^m01_axi_tvalid\,
+      D => done1_reg_n_0,
+      Q => m01_axi_tvalid,
       R => rst
     );
 following_i_1: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"04040050"
+      INIT => X"15100000"
     )
         port map (
       I0 => rst,
-      I1 => \^rd_en\,
-      I2 => lock_reg_n_0,
-      I3 => done_i_2_n_0,
-      I4 => empty,
+      I1 => empty,
+      I2 => following3_out,
+      I3 => \^rd_en\,
+      I4 => following_i_3_n_0,
       O => following_i_1_n_0
+    );
+following_i_2: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"0F000100"
+    )
+        port map (
+      I0 => waitfifo_reg_n_0,
+      I1 => empty,
+      I2 => \kont[6]_i_5_n_0\,
+      I3 => \kont_reg__0\(6),
+      I4 => lock_reg_n_0,
+      O => following3_out
+    );
+following_i_3: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"C0FFC0C0AAAAAAAA"
+    )
+        port map (
+      I0 => empty,
+      I1 => m01_axi_tready,
+      I2 => done1_reg_n_0,
+      I3 => \kont[6]_i_5_n_0\,
+      I4 => \kont_reg__0\(6),
+      I5 => lock_reg_n_0,
+      O => following_i_3_n_0
     );
 following_reg: unisim.vcomponents.FDRE
     generic map(
@@ -331,50 +429,52 @@ following_reg: unisim.vcomponents.FDRE
       Q => \^rd_en\,
       R => '0'
     );
-\kont[0]_i_1\: unisim.vcomponents.LUT3
+\kont[0]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"08"
+      INIT => X"0008"
     )
         port map (
-      I0 => lock_reg_n_0,
-      I1 => m01_axi_tready,
-      I2 => \kont_reg__0\(0),
+      I0 => m01_axi_tready,
+      I1 => lock_reg_n_0,
+      I2 => done1_reg_n_0,
+      I3 => \kont_reg__0\(0),
       O => \p_0_in__0\(0)
     );
-\kont[1]_i_1\: unisim.vcomponents.LUT4
+\kont[1]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"0880"
+      INIT => X"00404000"
     )
         port map (
-      I0 => m01_axi_tready,
+      I0 => done1_reg_n_0,
       I1 => lock_reg_n_0,
-      I2 => \kont_reg__0\(0),
-      I3 => \kont_reg__0\(1),
+      I2 => m01_axi_tready,
+      I3 => \kont_reg__0\(0),
+      I4 => \kont_reg__0\(1),
       O => \p_0_in__0\(1)
     );
-\kont[2]_i_1\: unisim.vcomponents.LUT5
+\kont[2]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"08888000"
+      INIT => X"0040404040000000"
     )
         port map (
-      I0 => m01_axi_tready,
+      I0 => done1_reg_n_0,
       I1 => lock_reg_n_0,
-      I2 => \kont_reg__0\(1),
-      I3 => \kont_reg__0\(0),
-      I4 => \kont_reg__0\(2),
+      I2 => m01_axi_tready,
+      I3 => \kont_reg__0\(1),
+      I4 => \kont_reg__0\(0),
+      I5 => \kont_reg__0\(2),
       O => \p_0_in__0\(2)
     );
-\kont[3]_i_1\: unisim.vcomponents.LUT6
+\kont[3]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"7F00000080000000"
+      INIT => X"2AAA8000"
     )
         port map (
-      I0 => \kont_reg__0\(1),
-      I1 => \kont_reg__0\(0),
-      I2 => \kont_reg__0\(2),
-      I3 => lock_reg_n_0,
-      I4 => m01_axi_tready,
-      I5 => \kont_reg__0\(3),
+      I0 => \kont[4]_i_2_n_0\,
+      I1 => \kont_reg__0\(2),
+      I2 => \kont_reg__0\(0),
+      I3 => \kont_reg__0\(1),
+      I4 => \kont_reg__0\(3),
       O => \p_0_in__0\(3)
     );
 \kont[4]_i_1\: unisim.vcomponents.LUT6
@@ -390,24 +490,26 @@ following_reg: unisim.vcomponents.FDRE
       I5 => \kont_reg__0\(4),
       O => \p_0_in__0\(4)
     );
-\kont[4]_i_2\: unisim.vcomponents.LUT2
+\kont[4]_i_2\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"8"
+      INIT => X"40"
     )
         port map (
-      I0 => m01_axi_tready,
+      I0 => done1_reg_n_0,
       I1 => lock_reg_n_0,
+      I2 => m01_axi_tready,
       O => \kont[4]_i_2_n_0\
     );
-\kont[5]_i_1\: unisim.vcomponents.LUT4
+\kont[5]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"8040"
+      INIT => X"00800040"
     )
         port map (
       I0 => \kont[5]_i_2_n_0\,
-      I1 => lock_reg_n_0,
-      I2 => m01_axi_tready,
-      I3 => \kont_reg__0\(5),
+      I1 => m01_axi_tready,
+      I2 => lock_reg_n_0,
+      I3 => done1_reg_n_0,
+      I4 => \kont_reg__0\(5),
       O => \p_0_in__0\(5)
     );
 \kont[5]_i_2\: unisim.vcomponents.LUT5
@@ -435,29 +537,39 @@ following_reg: unisim.vcomponents.FDRE
     );
 \kont[6]_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"FFFF000222220002"
-    )
-        port map (
-      I0 => \kont_reg__0\(6),
-      I1 => \kont[6]_i_4_n_0\,
-      I2 => empty,
-      I3 => waitfifo_reg_n_0,
-      I4 => lock_reg_n_0,
-      I5 => m01_axi_tready,
-      O => \kont[6]_i_2_n_0\
-    );
-\kont[6]_i_3\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"8040"
+      INIT => X"55550101FF550101"
     )
         port map (
       I0 => \kont[6]_i_4_n_0\,
-      I1 => lock_reg_n_0,
-      I2 => m01_axi_tready,
-      I3 => \kont_reg__0\(6),
+      I1 => empty,
+      I2 => waitfifo_reg_n_0,
+      I3 => m01_axi_tready,
+      I4 => lock_reg_n_0,
+      I5 => done1_reg_n_0,
+      O => \kont[6]_i_2_n_0\
+    );
+\kont[6]_i_3\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"00800040"
+    )
+        port map (
+      I0 => \kont[6]_i_5_n_0\,
+      I1 => m01_axi_tready,
+      I2 => lock_reg_n_0,
+      I3 => done1_reg_n_0,
+      I4 => \kont_reg__0\(6),
       O => \p_0_in__0\(6)
     );
-\kont[6]_i_4\: unisim.vcomponents.LUT6
+\kont[6]_i_4\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"B"
+    )
+        port map (
+      I0 => \kont[6]_i_5_n_0\,
+      I1 => \kont_reg__0\(6),
+      O => \kont[6]_i_4_n_0\
+    );
+\kont[6]_i_5\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"7FFFFFFFFFFFFFFF"
     )
@@ -468,7 +580,7 @@ following_reg: unisim.vcomponents.FDRE
       I3 => \kont_reg__0\(1),
       I4 => \kont_reg__0\(3),
       I5 => \kont_reg__0\(5),
-      O => \kont[6]_i_4_n_0\
+      O => \kont[6]_i_5_n_0\
     );
 \kont_reg[0]\: unisim.vcomponents.FDRE
     generic map(
@@ -552,7 +664,7 @@ lock_i_1: unisim.vcomponents.LUT5
       INIT => X"B0B0B0BF"
     )
         port map (
-      I0 => \kont[6]_i_4_n_0\,
+      I0 => \kont[6]_i_5_n_0\,
       I1 => \kont_reg__0\(6),
       I2 => lock_reg_n_0,
       I3 => waitfifo_reg_n_0,
@@ -787,12 +899,12 @@ start0_carry_i_5: unisim.vcomponents.LUT2
     );
 \start[7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"8A008A008A008AFF"
+      INIT => X"20002000200020FF"
     )
         port map (
-      I0 => m01_axi_tready,
-      I1 => \kont[6]_i_4_n_0\,
-      I2 => \kont_reg__0\(6),
+      I0 => \kont[6]_i_4_n_0\,
+      I1 => done1_reg_n_0,
+      I2 => m01_axi_tready,
       I3 => lock_reg_n_0,
       I4 => waitfifo_reg_n_0,
       I5 => empty,
@@ -905,7 +1017,7 @@ waitfifo_i_1: unisim.vcomponents.LUT5
         port map (
       I0 => empty,
       I1 => waitfifo_reg_n_0,
-      I2 => \kont[6]_i_4_n_0\,
+      I2 => \kont[6]_i_5_n_0\,
       I3 => \kont_reg__0\(6),
       I4 => lock_reg_n_0,
       O => waitfifo_i_1_n_0
@@ -6502,12 +6614,12 @@ use UNISIM.VCOMPONENTS.ALL;
 entity BlockDesign_QPSKBlockIP_0_0_QPSKBlockIP_v1_0_S01_AXI is
   port (
     m01_axi_tdata : out STD_LOGIC_VECTOR ( 17 downto 0 );
+    m01_axi_tvalid : out STD_LOGIC;
     S_AXI_WREADY : out STD_LOGIC;
     S_AXI_AWREADY : out STD_LOGIC;
     S_AXI_ARREADY : out STD_LOGIC;
     s01_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     s01_axi_rvalid : out STD_LOGIC;
-    m01_axi_tvalid : out STD_LOGIC;
     s01_axi_bvalid : out STD_LOGIC;
     s01_axi_aclk : in STD_LOGIC;
     s01_axi_awaddr : in STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -6567,10 +6679,10 @@ architecture STRUCTURE of BlockDesign_QPSKBlockIP_0_0_QPSKBlockIP_v1_0_S01_AXI i
   signal valid : STD_LOGIC;
   signal valid0 : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of axi_arready_i_1 : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of axi_awready_i_2 : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of axi_rvalid_i_1 : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of axi_wready_i_1 : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of axi_arready_i_1 : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of axi_awready_i_2 : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of axi_rvalid_i_1 : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of axi_wready_i_1 : label is "soft_lutpair12";
 begin
   S_AXI_ARREADY <= \^s_axi_arready\;
   S_AXI_AWREADY <= \^s_axi_awready\;
@@ -8496,12 +8608,12 @@ use UNISIM.VCOMPONENTS.ALL;
 entity BlockDesign_QPSKBlockIP_0_0_QPSKBlockIP_v1_0 is
   port (
     m01_axi_tdata : out STD_LOGIC_VECTOR ( 17 downto 0 );
+    m01_axi_tvalid : out STD_LOGIC;
     S_AXI_WREADY : out STD_LOGIC;
     S_AXI_AWREADY : out STD_LOGIC;
     S_AXI_ARREADY : out STD_LOGIC;
     s01_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     s01_axi_rvalid : out STD_LOGIC;
-    m01_axi_tvalid : out STD_LOGIC;
     s01_axi_bvalid : out STD_LOGIC;
     s01_axi_aclk : in STD_LOGIC;
     s01_axi_awaddr : in STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -8593,7 +8705,7 @@ architecture STRUCTURE of BlockDesign_QPSKBlockIP_0_0 is
   attribute x_interface_info : string;
   attribute x_interface_info of s01_axi_aclk : signal is "xilinx.com:signal:clock:1.0 S01_AXI_CLK CLK";
   attribute x_interface_parameter : string;
-  attribute x_interface_parameter of s01_axi_aclk : signal is "XIL_INTERFACENAME S01_AXI_CLK, ASSOCIATED_BUSIF S01_AXI, ASSOCIATED_RESET s01_axi_aresetn, FREQ_HZ 100000000, PHASE 0.000, INSERT_VIP 0";
+  attribute x_interface_parameter of s01_axi_aclk : signal is "XIL_INTERFACENAME S01_AXI_CLK, ASSOCIATED_BUSIF S01_AXI, ASSOCIATED_RESET s01_axi_aresetn, FREQ_HZ 48000000, PHASE 0.000, CLK_DOMAIN BlockDesign_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute x_interface_info of s01_axi_aresetn : signal is "xilinx.com:signal:reset:1.0 S01_AXI_RST RST";
   attribute x_interface_parameter of s01_axi_aresetn : signal is "XIL_INTERFACENAME S01_AXI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   attribute x_interface_info of s01_axi_arready : signal is "xilinx.com:interface:aximm:1.0 S01_AXI ARREADY";
@@ -8609,7 +8721,7 @@ architecture STRUCTURE of BlockDesign_QPSKBlockIP_0_0 is
   attribute x_interface_info of s01_axi_araddr : signal is "xilinx.com:interface:aximm:1.0 S01_AXI ARADDR";
   attribute x_interface_info of s01_axi_arprot : signal is "xilinx.com:interface:aximm:1.0 S01_AXI ARPROT";
   attribute x_interface_info of s01_axi_awaddr : signal is "xilinx.com:interface:aximm:1.0 S01_AXI AWADDR";
-  attribute x_interface_parameter of s01_axi_awaddr : signal is "XIL_INTERFACENAME S01_AXI, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 4, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 4, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute x_interface_parameter of s01_axi_awaddr : signal is "XIL_INTERFACENAME S01_AXI, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 4, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 48000000, ID_WIDTH 0, ADDR_WIDTH 4, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN BlockDesign_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 4, NUM_WRITE_THREADS 4, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute x_interface_info of s01_axi_awprot : signal is "xilinx.com:interface:aximm:1.0 S01_AXI AWPROT";
   attribute x_interface_info of s01_axi_bresp : signal is "xilinx.com:interface:aximm:1.0 S01_AXI BRESP";
   attribute x_interface_info of s01_axi_rdata : signal is "xilinx.com:interface:aximm:1.0 S01_AXI RDATA";

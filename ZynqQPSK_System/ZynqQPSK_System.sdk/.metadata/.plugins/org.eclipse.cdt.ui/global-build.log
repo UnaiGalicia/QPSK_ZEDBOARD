@@ -1851,3 +1851,504 @@ arm-none-eabi-size Test.elf  |tee "Test.elf.size"
  121420	   2580	  23328	 147328	  23f80	Test.elf
 'Finished building: Test.elf.size'
 ' '
+17:13:05 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ZynqQPSK_Main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZynqQPSK_Main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZynqQPSK_Main.d" -MT"src/ZynqQPSK_Main.o" -o "src/ZynqQPSK_Main.o" "../src/ZynqQPSK_Main.c"
+../src/ZynqQPSK_Main.c: In function 'aukera':
+../src/ZynqQPSK_Main.c:130:20: error: 'n' undeclared (first use in this function)
+    eskatuPositibo(&n, 4);
+                    ^
+../src/ZynqQPSK_Main.c:130:20: note: each undeclared identifier is reported only once for each function it appears in
+../src/ZynqQPSK_Main.c:130:4: error: too many arguments to function 'eskatuPositibo'
+    eskatuPositibo(&n, 4);
+    ^~~~~~~~~~~~~~
+../src/ZynqQPSK_Main.c:57:6: note: declared here
+ void eskatuPositibo(unsigned int *par);
+      ^~~~~~~~~~~~~~
+../src/ZynqQPSK_Main.c: In function 'eskatuPositibo':
+../src/ZynqQPSK_Main.c:186:4: error: 'cout' undeclared (first use in this function)
+    cout << '\n';
+    ^~~~
+../src/ZynqQPSK_Main.c:188:26: error: invalid operands to binary % (have 'unsigned int **' and 'int')
+    if((&par)>0 && ((&par)%2)==0)
+                    ~~~~~~^
+make: *** [src/subdir.mk:26: src/ZynqQPSK_Main.o] Error 1
+17:13:53 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ZynqQPSK_Main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZynqQPSK_Main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZynqQPSK_Main.d" -MT"src/ZynqQPSK_Main.o" -o "src/ZynqQPSK_Main.o" "../src/ZynqQPSK_Main.c"
+../src/ZynqQPSK_Main.c: In function 'aukera':
+../src/ZynqQPSK_Main.c:130:20: error: 'n' undeclared (first use in this function)
+    eskatuPositibo(&n, 4);
+                    ^
+../src/ZynqQPSK_Main.c:130:20: note: each undeclared identifier is reported only once for each function it appears in
+../src/ZynqQPSK_Main.c:130:4: error: too many arguments to function 'eskatuPositibo'
+    eskatuPositibo(&n, 4);
+    ^~~~~~~~~~~~~~
+../src/ZynqQPSK_Main.c:57:6: note: declared here
+ void eskatuPositibo(unsigned int *par);
+      ^~~~~~~~~~~~~~
+../src/ZynqQPSK_Main.c: In function 'eskatuPositibo':
+../src/ZynqQPSK_Main.c:186:11: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+    printf('\n');
+           ^~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/ZynqQPSK_Main.c:48:
+c:\xilinx\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:181:5: note: expected 'const char * restrict' but argument is of type 'int'
+ int _EXFUN(printf, (const char *__restrict, ...)
+     ^
+../src/ZynqQPSK_Main.c:188:40: error: invalid operands to binary % (have 'unsigned int **' and 'unsigned int')
+    if((&par)>(unsigned int)0 && ((&par)%(unsigned int)2)==0)
+                                  ~~~~~~^
+make: *** [src/subdir.mk:26: src/ZynqQPSK_Main.o] Error 1
+17:15:26 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ZynqQPSK_Main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZynqQPSK_Main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZynqQPSK_Main.d" -MT"src/ZynqQPSK_Main.o" -o "src/ZynqQPSK_Main.o" "../src/ZynqQPSK_Main.c"
+../src/ZynqQPSK_Main.c: In function 'aukera':
+../src/ZynqQPSK_Main.c:130:20: error: 'n' undeclared (first use in this function)
+    eskatuPositibo(&n, 4);
+                    ^
+../src/ZynqQPSK_Main.c:130:20: note: each undeclared identifier is reported only once for each function it appears in
+../src/ZynqQPSK_Main.c:130:4: error: too many arguments to function 'eskatuPositibo'
+    eskatuPositibo(&n, 4);
+    ^~~~~~~~~~~~~~
+../src/ZynqQPSK_Main.c:57:6: note: declared here
+ void eskatuPositibo(unsigned int *par);
+      ^~~~~~~~~~~~~~
+../src/ZynqQPSK_Main.c: In function 'eskatuPositibo':
+../src/ZynqQPSK_Main.c:180:16: warning: unused variable 'b' [-Wunused-variable]
+   unsigned int b=0;
+                ^
+make: *** [src/subdir.mk:26: src/ZynqQPSK_Main.o] Error 1
+17:19:46 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ZynqQPSK_Main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZynqQPSK_Main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZynqQPSK_Main.d" -MT"src/ZynqQPSK_Main.o" -o "src/ZynqQPSK_Main.o" "../src/ZynqQPSK_Main.c"
+../src/ZynqQPSK_Main.c: In function 'aukera':
+../src/ZynqQPSK_Main.c:134:13: error: 'n' undeclared (first use in this function)
+   } while ((n % 2) != 0);
+             ^
+../src/ZynqQPSK_Main.c:134:13: note: each undeclared identifier is reported only once for each function it appears in
+../src/ZynqQPSK_Main.c:136:15: warning: unused variable 'bitak' [-Wunused-variable]
+  unsigned int bitak[kopurua];
+               ^~~~~
+make: *** [src/subdir.mk:26: src/ZynqQPSK_Main.o] Error 1
+17:19:56 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ZynqQPSK_Main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZynqQPSK_Main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZynqQPSK_Main.d" -MT"src/ZynqQPSK_Main.o" -o "src/ZynqQPSK_Main.o" "../src/ZynqQPSK_Main.c"
+../src/ZynqQPSK_Main.c: In function 'aukera':
+../src/ZynqQPSK_Main.c:136:15: warning: unused variable 'bitak' [-Wunused-variable]
+  unsigned int bitak[kopurua];
+               ^~~~~
+'Finished building: ../src/ZynqQPSK_Main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+In file included from ../src/platform.c:33:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:19:10: fatal error: xparameters_ps.h: No such file or directory
+ #include "xparameters_ps.h"
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:26: src/platform.o] Error 1
+17:25:18 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ZynqQPSK_Main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZynqQPSK_Main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZynqQPSK_Main.d" -MT"src/ZynqQPSK_Main.o" -o "src/ZynqQPSK_Main.o" "../src/ZynqQPSK_Main.c"
+../src/ZynqQPSK_Main.c: In function 'aukera':
+../src/ZynqQPSK_Main.c:121:15: warning: unused variable 'sinb' [-Wunused-variable]
+  unsigned int sinb=0, a=0;
+               ^~~~
+'Finished building: ../src/ZynqQPSK_Main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+In file included from ../src/platform.c:33:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:19:10: fatal error: xparameters_ps.h: No such file or directory
+ #include "xparameters_ps.h"
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:26: src/platform.o] Error 1
+17:25:45 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/QPSKBlockIP_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/QPSKBlockIP_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/QPSKBlockIP_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/QPSKBlockIP_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling QPSKBlockIP..."
+QPSKBlockIP_selftest.c: In function 'QPSKBLOCKIP_Reg_SelfTest':
+QPSKBlockIP_selftest.c:52:60: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( QPSKBLOCKIP_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                            ^~
+QPSKBlockIP_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from usleep.c:56:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+17:26:03 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/ZynqQPSK_Main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 122100	   2580	  23328	 148008	  24228	Test.elf
+'Finished building: Test.elf.size'
+' '
+17:26:07 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ZynqQPSK_Main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZynqQPSK_Main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZynqQPSK_Main.d" -MT"src/ZynqQPSK_Main.o" -o "src/ZynqQPSK_Main.o" "../src/ZynqQPSK_Main.c"
+../src/ZynqQPSK_Main.c: In function 'aukera':
+../src/ZynqQPSK_Main.c:120:15: warning: unused variable 'sinb' [-Wunused-variable]
+  unsigned int sinb=0, a=0;
+               ^~~~
+'Finished building: ../src/ZynqQPSK_Main.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/ZynqQPSK_Main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 122100	   2580	  23328	 148008	  24228	Test.elf
+'Finished building: Test.elf.size'
+' '
+17:26:37 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ZynqQPSK_Main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZynqQPSK_Main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZynqQPSK_Main.d" -MT"src/ZynqQPSK_Main.o" -o "src/ZynqQPSK_Main.o" "../src/ZynqQPSK_Main.c"
+'Finished building: ../src/ZynqQPSK_Main.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/ZynqQPSK_Main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 122100	   2580	  23328	 148008	  24228	Test.elf
+'Finished building: Test.elf.size'
+' '
+17:26:52 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ZynqQPSK_Main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZynqQPSK_Main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZynqQPSK_Main.d" -MT"src/ZynqQPSK_Main.o" -o "src/ZynqQPSK_Main.o" "../src/ZynqQPSK_Main.c"
+'Finished building: ../src/ZynqQPSK_Main.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/ZynqQPSK_Main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 122100	   2580	  23328	 148008	  24228	Test.elf
+'Finished building: Test.elf.size'
+' '
+17:27:30 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ZynqQPSK_Main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZynqQPSK_Main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZynqQPSK_Main.d" -MT"src/ZynqQPSK_Main.o" -o "src/ZynqQPSK_Main.o" "../src/ZynqQPSK_Main.c"
+'Finished building: ../src/ZynqQPSK_Main.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/ZynqQPSK_Main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 122100	   2580	  23328	 148008	  24228	Test.elf
+'Finished building: Test.elf.size'
+' '
+17:27:55 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ZynqQPSK_Main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZynqQPSK_Main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZynqQPSK_Main.d" -MT"src/ZynqQPSK_Main.o" -o "src/ZynqQPSK_Main.o" "../src/ZynqQPSK_Main.c"
+'Finished building: ../src/ZynqQPSK_Main.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/ZynqQPSK_Main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 122100	   2580	  23328	 148008	  24228	Test.elf
+'Finished building: Test.elf.size'
+' '
+17:28:12 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ZynqQPSK_Main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZynqQPSK_Main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZynqQPSK_Main.d" -MT"src/ZynqQPSK_Main.o" -o "src/ZynqQPSK_Main.o" "../src/ZynqQPSK_Main.c"
+'Finished building: ../src/ZynqQPSK_Main.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/ZynqQPSK_Main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 122100	   2580	  23328	 148008	  24228	Test.elf
+'Finished building: Test.elf.size'
+' '
+17:28:32 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ZynqQPSK_Main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZynqQPSK_Main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZynqQPSK_Main.d" -MT"src/ZynqQPSK_Main.o" -o "src/ZynqQPSK_Main.o" "../src/ZynqQPSK_Main.c"
+'Finished building: ../src/ZynqQPSK_Main.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/ZynqQPSK_Main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 122100	   2580	  23328	 148008	  24228	Test.elf
+'Finished building: Test.elf.size'
+' '
+17:31:07 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ZynqQPSK_Main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZynqQPSK_Main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZynqQPSK_Main.d" -MT"src/ZynqQPSK_Main.o" -o "src/ZynqQPSK_Main.o" "../src/ZynqQPSK_Main.c"
+'Finished building: ../src/ZynqQPSK_Main.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/ZynqQPSK_Main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 122100	   2580	  23328	 148008	  24228	Test.elf
+'Finished building: Test.elf.size'
+' '
+17:32:45 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ZynqQPSK_Main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZynqQPSK_Main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZynqQPSK_Main.d" -MT"src/ZynqQPSK_Main.o" -o "src/ZynqQPSK_Main.o" "../src/ZynqQPSK_Main.c"
+'Finished building: ../src/ZynqQPSK_Main.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/ZynqQPSK_Main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 122100	   2580	  23328	 148008	  24228	Test.elf
+'Finished building: Test.elf.size'
+' '
+17:32:54 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ZynqQPSK_Main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZynqQPSK_Main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZynqQPSK_Main.d" -MT"src/ZynqQPSK_Main.o" -o "src/ZynqQPSK_Main.o" "../src/ZynqQPSK_Main.c"
+'Finished building: ../src/ZynqQPSK_Main.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/ZynqQPSK_Main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 122100	   2580	  23328	 148008	  24228	Test.elf
+'Finished building: Test.elf.size'
+' '
+08:08:30 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+08:11:47 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+08:12:55 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+08:14:46 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+08:15:23 **** Auto Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ZynqQPSK_Main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZynqQPSK_Main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ZynqQPSK_Main.d" -MT"src/ZynqQPSK_Main.o" -o "src/ZynqQPSK_Main.o" "../src/ZynqQPSK_Main.c"
+'Finished building: ../src/ZynqQPSK_Main.c'
+' '
+'Building target: Test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Test.elf"  ./src/ZynqQPSK_Main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Test.elf  |tee "Test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 122132	   2580	  23328	 148040	  24248	Test.elf
+'Finished building: Test.elf.size'
+' '
+08:15:33 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+08:17:58 **** Incremental Build of configuration Debug for project Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.

@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Mon May 30 17:58:55 2022
+// Date        : Thu Jun  2 16:45:33 2022
 // Host        : DESKTOP-T22LSJU running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               C:/VivadoProjects/ZynqQPSK_System/ZynqQPSK_System.srcs/sources_1/bd/BlockDesign/ip/BlockDesign_QPSKBlockIP_0_0/BlockDesign_QPSKBlockIP_0_0_sim_netlist.v
@@ -42,7 +42,7 @@ module BlockDesign_QPSKBlockIP_0_0
   output [31:0]m01_axi_tdata;
   output m01_axi_tvalid;
   input m01_axi_tready;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S01_AXI AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME S01_AXI, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 4, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 4, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [3:0]s01_axi_awaddr;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S01_AXI AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME S01_AXI, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 4, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 48000000, ID_WIDTH 0, ADDR_WIDTH 4, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN BlockDesign_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 4, NUM_WRITE_THREADS 4, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [3:0]s01_axi_awaddr;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S01_AXI AWPROT" *) input [2:0]s01_axi_awprot;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S01_AXI AWVALID" *) input s01_axi_awvalid;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S01_AXI AWREADY" *) output s01_axi_awready;
@@ -61,7 +61,7 @@ module BlockDesign_QPSKBlockIP_0_0
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S01_AXI RRESP" *) output [1:0]s01_axi_rresp;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S01_AXI RVALID" *) output s01_axi_rvalid;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S01_AXI RREADY" *) input s01_axi_rready;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 S01_AXI_CLK CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME S01_AXI_CLK, ASSOCIATED_BUSIF S01_AXI, ASSOCIATED_RESET s01_axi_aresetn, FREQ_HZ 100000000, PHASE 0.000, INSERT_VIP 0" *) input s01_axi_aclk;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 S01_AXI_CLK CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME S01_AXI_CLK, ASSOCIATED_BUSIF S01_AXI, ASSOCIATED_RESET s01_axi_aresetn, FREQ_HZ 48000000, PHASE 0.000, CLK_DOMAIN BlockDesign_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input s01_axi_aclk;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 S01_AXI_RST RST" *) (* x_interface_parameter = "XIL_INTERFACENAME S01_AXI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s01_axi_aresetn;
 
   wire \<const0> ;
@@ -220,12 +220,12 @@ endmodule
 (* ORIG_REF_NAME = "QPSKBlockIP_v1_0" *) 
 module BlockDesign_QPSKBlockIP_0_0_QPSKBlockIP_v1_0
    (m01_axi_tdata,
+    m01_axi_tvalid,
     S_AXI_WREADY,
     S_AXI_AWREADY,
     S_AXI_ARREADY,
     s01_axi_rdata,
     s01_axi_rvalid,
-    m01_axi_tvalid,
     s01_axi_bvalid,
     s01_axi_aclk,
     s01_axi_awaddr,
@@ -240,12 +240,12 @@ module BlockDesign_QPSKBlockIP_0_0_QPSKBlockIP_v1_0
     s01_axi_bready,
     s01_axi_rready);
   output [17:0]m01_axi_tdata;
+  output m01_axi_tvalid;
   output S_AXI_WREADY;
   output S_AXI_AWREADY;
   output S_AXI_ARREADY;
   output [31:0]s01_axi_rdata;
   output s01_axi_rvalid;
-  output m01_axi_tvalid;
   output s01_axi_bvalid;
   input s01_axi_aclk;
   input [1:0]s01_axi_awaddr;
@@ -307,12 +307,12 @@ endmodule
 (* ORIG_REF_NAME = "QPSKBlockIP_v1_0_S01_AXI" *) 
 module BlockDesign_QPSKBlockIP_0_0_QPSKBlockIP_v1_0_S01_AXI
    (m01_axi_tdata,
+    m01_axi_tvalid,
     S_AXI_WREADY,
     S_AXI_AWREADY,
     S_AXI_ARREADY,
     s01_axi_rdata,
     s01_axi_rvalid,
-    m01_axi_tvalid,
     s01_axi_bvalid,
     s01_axi_aclk,
     s01_axi_awaddr,
@@ -327,12 +327,12 @@ module BlockDesign_QPSKBlockIP_0_0_QPSKBlockIP_v1_0_S01_AXI
     s01_axi_bready,
     s01_axi_rready);
   output [17:0]m01_axi_tdata;
+  output m01_axi_tvalid;
   output S_AXI_WREADY;
   output S_AXI_AWREADY;
   output S_AXI_ARREADY;
   output [31:0]s01_axi_rdata;
   output s01_axi_rvalid;
-  output m01_axi_tvalid;
   output s01_axi_bvalid;
   input s01_axi_aclk;
   input [1:0]s01_axi_awaddr;
@@ -460,7 +460,7 @@ module BlockDesign_QPSKBlockIP_0_0_QPSKBlockIP_v1_0_S01_AXI
         .D(\axi_araddr[3]_i_1_n_0 ),
         .Q(axi_araddr[3]),
         .S(axi_awready_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT2 #(
     .INIT(4'h2)) 
     axi_arready_i_1
@@ -510,7 +510,7 @@ module BlockDesign_QPSKBlockIP_0_0_QPSKBlockIP_v1_0_S01_AXI
     axi_awready_i_1
        (.I0(s01_axi_aresetn),
         .O(axi_awready_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT4 #(
     .INIT(16'h0080)) 
     axi_awready_i_2
@@ -1029,7 +1029,7 @@ module BlockDesign_QPSKBlockIP_0_0_QPSKBlockIP_v1_0_S01_AXI
         .D(reg_data_out[9]),
         .Q(s01_axi_rdata[9]),
         .R(axi_awready_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT4 #(
     .INIT(16'h08F8)) 
     axi_rvalid_i_1
@@ -1044,7 +1044,7 @@ module BlockDesign_QPSKBlockIP_0_0_QPSKBlockIP_v1_0_S01_AXI
         .D(axi_rvalid_i_1_n_0),
         .Q(s01_axi_rvalid),
         .R(axi_awready_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT4 #(
     .INIT(16'h0080)) 
     axi_wready_i_1
@@ -2010,37 +2010,44 @@ endmodule
 
 (* ORIG_REF_NAME = "control" *) 
 module BlockDesign_QPSKBlockIP_0_0_control
-   (rd_en,
-    m01_axi_tvalid,
+   (m01_axi_tvalid,
+    rd_en,
     Q,
     rst,
     s01_axi_aclk,
     empty,
-    m01_axi_tready,
-    dout);
-  output rd_en;
+    dout,
+    m01_axi_tready);
   output m01_axi_tvalid;
+  output rd_en;
   output [7:0]Q;
   input rst;
   input s01_axi_aclk;
   input empty;
-  input m01_axi_tready;
   input [1:0]dout;
+  input m01_axi_tready;
 
   wire [7:0]Q;
   wire [7:0]addr;
-  wire \address[7]_i_1_n_0 ;
-  wire done_i_1_n_0;
-  wire done_i_2_n_0;
+  wire done1;
+  wire done1_i_1_n_0;
+  wire done1_i_2_n_0;
+  wire done1_i_3_n_0;
+  wire done1_i_4_n_0;
+  wire done1_i_6_n_0;
+  wire done1_reg_n_0;
   wire [1:0]dout;
   wire empty;
+  wire following3_out;
   wire following_i_1_n_0;
+  wire following_i_3_n_0;
   wire in;
   wire \kont[4]_i_2_n_0 ;
   wire \kont[5]_i_2_n_0 ;
   wire \kont[6]_i_1_n_0 ;
   wire \kont[6]_i_2_n_0 ;
   wire \kont[6]_i_4_n_0 ;
+  wire \kont[6]_i_5_n_0 ;
   wire [6:0]kont_reg__0;
   wire lock_i_1_n_0;
   wire lock_reg_n_0;
@@ -2049,6 +2056,7 @@ module BlockDesign_QPSKBlockIP_0_0_control
   wire neg_i_1_n_0;
   wire [6:0]p_0_in__0;
   wire [7:0]p_0_in__1;
+  wire p_12_in;
   wire rd_en;
   wire rst;
   wire s01_axi_aclk;
@@ -2148,12 +2156,12 @@ module BlockDesign_QPSKBlockIP_0_0_control
     .INIT(2'h1)) 
     \address[7]_i_1 
        (.I0(rst),
-        .O(\address[7]_i_1_n_0 ));
+        .O(p_12_in));
   FDRE #(
     .INIT(1'b0)) 
     \address_reg[0] 
        (.C(s01_axi_aclk),
-        .CE(\address[7]_i_1_n_0 ),
+        .CE(p_12_in),
         .D(addr[0]),
         .Q(Q[0]),
         .R(1'b0));
@@ -2161,7 +2169,7 @@ module BlockDesign_QPSKBlockIP_0_0_control
     .INIT(1'b0)) 
     \address_reg[1] 
        (.C(s01_axi_aclk),
-        .CE(\address[7]_i_1_n_0 ),
+        .CE(p_12_in),
         .D(addr[1]),
         .Q(Q[1]),
         .R(1'b0));
@@ -2169,7 +2177,7 @@ module BlockDesign_QPSKBlockIP_0_0_control
     .INIT(1'b0)) 
     \address_reg[2] 
        (.C(s01_axi_aclk),
-        .CE(\address[7]_i_1_n_0 ),
+        .CE(p_12_in),
         .D(addr[2]),
         .Q(Q[2]),
         .R(1'b0));
@@ -2177,7 +2185,7 @@ module BlockDesign_QPSKBlockIP_0_0_control
     .INIT(1'b0)) 
     \address_reg[3] 
        (.C(s01_axi_aclk),
-        .CE(\address[7]_i_1_n_0 ),
+        .CE(p_12_in),
         .D(addr[3]),
         .Q(Q[3]),
         .R(1'b0));
@@ -2185,7 +2193,7 @@ module BlockDesign_QPSKBlockIP_0_0_control
     .INIT(1'b0)) 
     \address_reg[4] 
        (.C(s01_axi_aclk),
-        .CE(\address[7]_i_1_n_0 ),
+        .CE(p_12_in),
         .D(addr[4]),
         .Q(Q[4]),
         .R(1'b0));
@@ -2193,7 +2201,7 @@ module BlockDesign_QPSKBlockIP_0_0_control
     .INIT(1'b0)) 
     \address_reg[5] 
        (.C(s01_axi_aclk),
-        .CE(\address[7]_i_1_n_0 ),
+        .CE(p_12_in),
         .D(addr[5]),
         .Q(Q[5]),
         .R(1'b0));
@@ -2201,7 +2209,7 @@ module BlockDesign_QPSKBlockIP_0_0_control
     .INIT(1'b0)) 
     \address_reg[6] 
        (.C(s01_axi_aclk),
-        .CE(\address[7]_i_1_n_0 ),
+        .CE(p_12_in),
         .D(addr[6]),
         .Q(Q[6]),
         .R(1'b0));
@@ -2209,44 +2217,113 @@ module BlockDesign_QPSKBlockIP_0_0_control
     .INIT(1'b0)) 
     \address_reg[7] 
        (.C(s01_axi_aclk),
-        .CE(\address[7]_i_1_n_0 ),
+        .CE(p_12_in),
         .D(addr[7]),
         .Q(Q[7]),
         .R(1'b0));
   LUT6 #(
-    .INIT(64'hB0BFB0BF8080808F)) 
-    done_i_1
-       (.I0(m01_axi_tready),
-        .I1(done_i_2_n_0),
-        .I2(lock_reg_n_0),
-        .I3(empty),
-        .I4(waitfifo_reg_n_0),
-        .I5(m01_axi_tvalid),
-        .O(done_i_1_n_0));
+    .INIT(64'hFFFFFFF1111111F1)) 
+    done1_i_1
+       (.I0(rst),
+        .I1(done1_i_2_n_0),
+        .I2(done1_reg_n_0),
+        .I3(done1_i_3_n_0),
+        .I4(done1_i_4_n_0),
+        .I5(done1),
+        .O(done1_i_1_n_0));
   (* SOFT_HLUTNM = "soft_lutpair6" *) 
-  LUT2 #(
-    .INIT(4'hB)) 
-    done_i_2
-       (.I0(\kont[6]_i_4_n_0 ),
-        .I1(kont_reg__0[6]),
-        .O(done_i_2_n_0));
+  LUT3 #(
+    .INIT(8'hFE)) 
+    done1_i_2
+       (.I0(empty),
+        .I1(waitfifo_reg_n_0),
+        .I2(lock_reg_n_0),
+        .O(done1_i_2_n_0));
+  LUT6 #(
+    .INIT(64'h000C000C00AA00AE)) 
+    done1_i_3
+       (.I0(empty),
+        .I1(done1_i_6_n_0),
+        .I2(kont_reg__0[0]),
+        .I3(rst),
+        .I4(waitfifo_reg_n_0),
+        .I5(lock_reg_n_0),
+        .O(done1_i_3_n_0));
+  LUT6 #(
+    .INIT(64'h1500150000001500)) 
+    done1_i_4
+       (.I0(rst),
+        .I1(m01_axi_tready),
+        .I2(done1_reg_n_0),
+        .I3(lock_reg_n_0),
+        .I4(kont_reg__0[6]),
+        .I5(\kont[6]_i_5_n_0 ),
+        .O(done1_i_4_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  LUT5 #(
+    .INIT(32'h08080008)) 
+    done1_i_5
+       (.I0(m01_axi_tready),
+        .I1(lock_reg_n_0),
+        .I2(done1_reg_n_0),
+        .I3(kont_reg__0[6]),
+        .I4(\kont[6]_i_5_n_0 ),
+        .O(done1));
+  LUT6 #(
+    .INIT(64'h0000000000000001)) 
+    done1_i_6
+       (.I0(kont_reg__0[3]),
+        .I1(kont_reg__0[4]),
+        .I2(kont_reg__0[1]),
+        .I3(kont_reg__0[2]),
+        .I4(kont_reg__0[6]),
+        .I5(kont_reg__0[5]),
+        .O(done1_i_6_n_0));
+  FDRE #(
+    .INIT(1'b0)) 
+    done1_reg
+       (.C(s01_axi_aclk),
+        .CE(1'b1),
+        .D(done1_i_1_n_0),
+        .Q(done1_reg_n_0),
+        .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
     done_reg
        (.C(s01_axi_aclk),
         .CE(1'b1),
-        .D(done_i_1_n_0),
+        .D(done1_reg_n_0),
         .Q(m01_axi_tvalid),
         .R(rst));
   LUT5 #(
-    .INIT(32'h04040050)) 
+    .INIT(32'h15100000)) 
     following_i_1
        (.I0(rst),
-        .I1(rd_en),
-        .I2(lock_reg_n_0),
-        .I3(done_i_2_n_0),
-        .I4(empty),
+        .I1(empty),
+        .I2(following3_out),
+        .I3(rd_en),
+        .I4(following_i_3_n_0),
         .O(following_i_1_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  LUT5 #(
+    .INIT(32'h0F000100)) 
+    following_i_2
+       (.I0(waitfifo_reg_n_0),
+        .I1(empty),
+        .I2(\kont[6]_i_5_n_0 ),
+        .I3(kont_reg__0[6]),
+        .I4(lock_reg_n_0),
+        .O(following3_out));
+  LUT6 #(
+    .INIT(64'hC0FFC0C0AAAAAAAA)) 
+    following_i_3
+       (.I0(empty),
+        .I1(m01_axi_tready),
+        .I2(done1_reg_n_0),
+        .I3(\kont[6]_i_5_n_0 ),
+        .I4(kont_reg__0[6]),
+        .I5(lock_reg_n_0),
+        .O(following_i_3_n_0));
   FDRE #(
     .INIT(1'b0)) 
     following_reg
@@ -2255,42 +2332,43 @@ module BlockDesign_QPSKBlockIP_0_0_control
         .D(following_i_1_n_0),
         .Q(rd_en),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
-  LUT3 #(
-    .INIT(8'h08)) 
-    \kont[0]_i_1 
-       (.I0(lock_reg_n_0),
-        .I1(m01_axi_tready),
-        .I2(kont_reg__0[0]),
-        .O(p_0_in__0[0]));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT4 #(
-    .INIT(16'h0880)) 
-    \kont[1]_i_1 
+    .INIT(16'h0008)) 
+    \kont[0]_i_1 
        (.I0(m01_axi_tready),
         .I1(lock_reg_n_0),
+        .I2(done1_reg_n_0),
+        .I3(kont_reg__0[0]),
+        .O(p_0_in__0[0]));
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  LUT5 #(
+    .INIT(32'h00404000)) 
+    \kont[1]_i_1 
+       (.I0(done1_reg_n_0),
+        .I1(lock_reg_n_0),
+        .I2(m01_axi_tready),
+        .I3(kont_reg__0[0]),
+        .I4(kont_reg__0[1]),
+        .O(p_0_in__0[1]));
+  LUT6 #(
+    .INIT(64'h0040404040000000)) 
+    \kont[2]_i_1 
+       (.I0(done1_reg_n_0),
+        .I1(lock_reg_n_0),
+        .I2(m01_axi_tready),
+        .I3(kont_reg__0[1]),
+        .I4(kont_reg__0[0]),
+        .I5(kont_reg__0[2]),
+        .O(p_0_in__0[2]));
+  LUT5 #(
+    .INIT(32'h2AAA8000)) 
+    \kont[3]_i_1 
+       (.I0(\kont[4]_i_2_n_0 ),
+        .I1(kont_reg__0[2]),
         .I2(kont_reg__0[0]),
         .I3(kont_reg__0[1]),
-        .O(p_0_in__0[1]));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
-  LUT5 #(
-    .INIT(32'h08888000)) 
-    \kont[2]_i_1 
-       (.I0(m01_axi_tready),
-        .I1(lock_reg_n_0),
-        .I2(kont_reg__0[1]),
-        .I3(kont_reg__0[0]),
-        .I4(kont_reg__0[2]),
-        .O(p_0_in__0[2]));
-  LUT6 #(
-    .INIT(64'h7F00000080000000)) 
-    \kont[3]_i_1 
-       (.I0(kont_reg__0[1]),
-        .I1(kont_reg__0[0]),
-        .I2(kont_reg__0[2]),
-        .I3(lock_reg_n_0),
-        .I4(m01_axi_tready),
-        .I5(kont_reg__0[3]),
+        .I4(kont_reg__0[3]),
         .O(p_0_in__0[3]));
   LUT6 #(
     .INIT(64'h7FFF000080000000)) 
@@ -2303,20 +2381,22 @@ module BlockDesign_QPSKBlockIP_0_0_control
         .I5(kont_reg__0[4]),
         .O(p_0_in__0[4]));
   (* SOFT_HLUTNM = "soft_lutpair9" *) 
-  LUT2 #(
-    .INIT(4'h8)) 
+  LUT3 #(
+    .INIT(8'h40)) 
     \kont[4]_i_2 
-       (.I0(m01_axi_tready),
-        .I1(lock_reg_n_0),
-        .O(\kont[4]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
-  LUT4 #(
-    .INIT(16'h8040)) 
-    \kont[5]_i_1 
-       (.I0(\kont[5]_i_2_n_0 ),
+       (.I0(done1_reg_n_0),
         .I1(lock_reg_n_0),
         .I2(m01_axi_tready),
-        .I3(kont_reg__0[5]),
+        .O(\kont[4]_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  LUT5 #(
+    .INIT(32'h00800040)) 
+    \kont[5]_i_1 
+       (.I0(\kont[5]_i_2_n_0 ),
+        .I1(m01_axi_tready),
+        .I2(lock_reg_n_0),
+        .I3(done1_reg_n_0),
+        .I4(kont_reg__0[5]),
         .O(p_0_in__0[5]));
   LUT5 #(
     .INIT(32'h7FFFFFFF)) 
@@ -2336,34 +2416,42 @@ module BlockDesign_QPSKBlockIP_0_0_control
         .I3(empty),
         .O(\kont[6]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFF000222220002)) 
+    .INIT(64'h55550101FF550101)) 
     \kont[6]_i_2 
-       (.I0(kont_reg__0[6]),
-        .I1(\kont[6]_i_4_n_0 ),
-        .I2(empty),
-        .I3(waitfifo_reg_n_0),
-        .I4(lock_reg_n_0),
-        .I5(m01_axi_tready),
-        .O(\kont[6]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
-  LUT4 #(
-    .INIT(16'h8040)) 
-    \kont[6]_i_3 
        (.I0(\kont[6]_i_4_n_0 ),
-        .I1(lock_reg_n_0),
-        .I2(m01_axi_tready),
-        .I3(kont_reg__0[6]),
+        .I1(empty),
+        .I2(waitfifo_reg_n_0),
+        .I3(m01_axi_tready),
+        .I4(lock_reg_n_0),
+        .I5(done1_reg_n_0),
+        .O(\kont[6]_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  LUT5 #(
+    .INIT(32'h00800040)) 
+    \kont[6]_i_3 
+       (.I0(\kont[6]_i_5_n_0 ),
+        .I1(m01_axi_tready),
+        .I2(lock_reg_n_0),
+        .I3(done1_reg_n_0),
+        .I4(kont_reg__0[6]),
         .O(p_0_in__0[6]));
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  LUT2 #(
+    .INIT(4'hB)) 
+    \kont[6]_i_4 
+       (.I0(\kont[6]_i_5_n_0 ),
+        .I1(kont_reg__0[6]),
+        .O(\kont[6]_i_4_n_0 ));
   LUT6 #(
     .INIT(64'h7FFFFFFFFFFFFFFF)) 
-    \kont[6]_i_4 
+    \kont[6]_i_5 
        (.I0(kont_reg__0[4]),
         .I1(kont_reg__0[2]),
         .I2(kont_reg__0[0]),
         .I3(kont_reg__0[1]),
         .I4(kont_reg__0[3]),
         .I5(kont_reg__0[5]),
-        .O(\kont[6]_i_4_n_0 ));
+        .O(\kont[6]_i_5_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \kont_reg[0] 
@@ -2420,10 +2508,11 @@ module BlockDesign_QPSKBlockIP_0_0_control
         .D(p_0_in__0[6]),
         .Q(kont_reg__0[6]),
         .R(\kont[6]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT5 #(
     .INIT(32'hB0B0B0BF)) 
     lock_i_1
-       (.I0(\kont[6]_i_4_n_0 ),
+       (.I0(\kont[6]_i_5_n_0 ),
         .I1(kont_reg__0[6]),
         .I2(lock_reg_n_0),
         .I3(waitfifo_reg_n_0),
@@ -2526,6 +2615,7 @@ module BlockDesign_QPSKBlockIP_0_0_control
         .I3(lock_reg_n_0),
         .I4(dout[0]),
         .O(p_0_in__1[0]));
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT5 #(
     .INIT(32'hAAABAAA8)) 
     \start[1]_i_1 
@@ -2581,11 +2671,11 @@ module BlockDesign_QPSKBlockIP_0_0_control
         .I4(dout[0]),
         .O(p_0_in__1[6]));
   LUT6 #(
-    .INIT(64'h8A008A008A008AFF)) 
+    .INIT(64'h20002000200020FF)) 
     \start[7]_i_1 
-       (.I0(m01_axi_tready),
-        .I1(\kont[6]_i_4_n_0 ),
-        .I2(kont_reg__0[6]),
+       (.I0(\kont[6]_i_4_n_0 ),
+        .I1(done1_reg_n_0),
+        .I2(m01_axi_tready),
         .I3(lock_reg_n_0),
         .I4(waitfifo_reg_n_0),
         .I5(empty),
@@ -2663,13 +2753,13 @@ module BlockDesign_QPSKBlockIP_0_0_control
         .D(p_0_in__1[7]),
         .Q(start_reg__0[7]),
         .R(rst));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT5 #(
     .INIT(32'hCFCC8888)) 
     waitfifo_i_1
        (.I0(empty),
         .I1(waitfifo_reg_n_0),
-        .I2(\kont[6]_i_4_n_0 ),
+        .I2(\kont[6]_i_5_n_0 ),
         .I3(kont_reg__0[6]),
         .I4(lock_reg_n_0),
         .O(waitfifo_i_1_n_0));
