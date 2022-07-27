@@ -27,4 +27,6 @@ A test implementation is proposed with the use of the Vivado AXI Traffic Generat
 
 Finally, note that the [ZynqQPSK_System](https://github.com/UnaiGalicia/QPSK_ZEDBOARD/tree/main/ZynqQPSK_System) folder also contains the C code implemented in the ZYNQ PS. It was developed in the Vivado SDK and its a very simple test code.
 
-A result of the generated QPSK modulated signal can be seen in the following picture, taken from a oscilloscope connected to the ZedBoards audio out
+A result of the generated QPSK modulated signal can be seen in the following picture, taken from a oscilloscope connected to the ZedBoards audio out:
+
+![Result](https://github.com/UnaiGalicia/QPSK_ZEDBOARD/blob/main/Explanations/result_modulated.jpeg)
